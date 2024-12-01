@@ -1,16 +1,25 @@
 
 #include "../includes/Phonebook.hpp"
 
+// Le fill info fonctionne, le probleme est après...
+
 int		add(PhoneBook phonebook, int contactCount) {
 	phonebook.newContact(contactCount);
 	return (1);
 }
 
-void	_search(PhoneBook phoneBook, int contactCount)
+void	search(PhoneBook phoneBook, int contactCount)
 {
-	(void)phoneBook;
-	(void)contactCount;
+	Contact	contact;
+
 	std::cout << HBAR << std::endl;
+	std::cout << "|" << "  index   " << "|" << "first name" << "|" << " nickname " << "|" << "phone num " << "|" << std::endl;
+	std::cout << HBAR << std::endl;
+	while (contactCount--) {
+		contact = phoneBook.getContact(contactCount);
+		std::cout << "|" << contact.getContactInfos(FIRST_NAME) << "|" << std::endl;
+		std::cout << HBAR << std::endl;
+	}
 }
 
 int		main() {
@@ -19,6 +28,8 @@ int		main() {
 	std::string	command;
 
 	while (true) {
+		if (contactCount == 8)
+			contactCount = 0;
 		std::cout << "Enter command: " << std::endl;
 		std::cin >> command;
 		std::cin.ignore();
@@ -27,7 +38,7 @@ int		main() {
 		if (command == "ADD" || command == "add")
 			add(phoneBook, contactCount++);else
 		if (command == "SEARCH" || command == "search")
-			_search(phoneBook, contactCount);else
+			search(phoneBook, contactCount);else
 		if (command == "EXIT" || command == "exit")
 			break;
 		else

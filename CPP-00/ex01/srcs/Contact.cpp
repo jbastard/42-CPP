@@ -5,6 +5,20 @@ Contact::~Contact() {}
 
 Contact::Contact() {}
 
+std::string	Contact::getContactInfos(int which) {
+	if (which == FIRST_NAME)
+		return (this->_name);
+	if (which == LAST_NAME)
+		return (this->_lastName);
+	if (which == NICKNAME)
+		return (this->_nickName);
+	if (which == PHONE_NUM)
+		return (this->_phoneNumber);
+	if (which == D_SECRET)
+		return (this->_darkestSecret);
+	return (NULL);
+}
+
 void Contact::fillInfos() {
 	std::cout << "Enter contact name: ";
 	std::getline(std::cin, this->_name);

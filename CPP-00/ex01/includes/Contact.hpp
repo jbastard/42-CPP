@@ -12,6 +12,7 @@ private:
 	std::string	_phoneNumber;
 	std::string	_darkestSecret;
 public:
+	std::string	getContactInfos(int which);
 	void fillInfos();
 	Contact();
 	~Contact();
