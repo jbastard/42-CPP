@@ -2,5 +2,6 @@
 # define MEGAPHONE_HPP
 
 #include <iostream>
+#include <cstring>
 
 #endif
