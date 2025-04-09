@@ -1,14 +1,36 @@
 
-#include "../includes/Contact.hpp"
 #include "../includes/Phonebook.hpp"
 
-int main(int ac, char **av)
-{
-	if (ac == 1)
-		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *";
-	for (int i = 1; i < ac; i++)
-		for (int j = 0; av[i][j]; j++)
-			std::cout << (char) toupper(av[i][j]);
-	std::cout << std::endl;
+PhoneBook::~PhoneBook() {}
+
+PhoneBook::PhoneBook() {}
+
+int _search() {
+	std::cout << "Searching.." << std::endl;
+	return (1);
+}
+
+int	_add() {
+	return (1);
+}
+
+int main() {
+	PhoneBook phoneBook = PhoneBook();
+	std::string command;
+
+	while (1) {
+		std::cout << "Enter command: " << std::endl;
+		std::cin >> command;
+		if (std::cin.eof())
+			break ;
+		if (!command.compare("ADD") || !command.compare("add"))
+			_add();
+		else if (!command.compare("SEARCH") || !command.compare("search"))
+			_search();
+		else if (!command.compare("EXIT") || !command.compare("exit"))
+			break ;
+		else
+			std::cout << "command not found: " << command << std::endl;
+	}
 	return (0);
 }

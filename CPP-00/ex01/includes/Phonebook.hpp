@@ -1,15 +1,16 @@
 
-#ifndef MEGAPHONE_HPP
-# define MEGAPHONE_HPP
+#ifndef PHONEBOOK_HPP
+# define PHONEBOOK_HPP
 
 # include <iostream>
+# include <string>
+# include <cstring>
+# include <cstdlib>
+
 # include "Contact.hpp"
 
-class	PhoneBook
-{
+class	PhoneBook {
 private:
-	Contact	contact[8];
-	int		contactCount = 8;
 public:
 	PhoneBook();
 	~PhoneBook();

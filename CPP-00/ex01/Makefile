@@ -1,4 +1,4 @@
-NAME = megaphone
+NAME = phonebook
 
 #COMPILATION
 CXX = g++
