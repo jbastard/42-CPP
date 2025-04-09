@@ -11,8 +11,8 @@ private:
 	int			_phoneNumber;
 	std::string	_darkestSecret;
 public:
+	int setPhoneNumber();
 	Contact();
-	Contact(const Contact&);
 	~Contact();
 };
 

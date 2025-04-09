@@ -5,14 +5,15 @@ CXX = g++
 CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
 #FILES_DIR
-SRC_DIR = src/
+SRC_DIR = srcs/
 OBJ_DIR = obj/
 
 #FILES
-SRC = phonebook.cpp
+SRC =	phonebook.cpp \
+		main.cpp
 
 SRCS		=	$(addprefix $(SRC_DIR), $(SRC))
-OBJS		=	$(patsubst $(SRC_DIR)%.cpp, $(OBJ_DIR)%.o, $(SRC))
+OBJS		=	$(patsubst $(SRC_DIR)%.cpp, $(OBJ_DIR)%.o, $(SRCS))
 
 all: $(NAME)
 
