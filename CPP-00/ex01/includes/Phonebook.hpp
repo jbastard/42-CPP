@@ -3,20 +3,16 @@
 # define MEGAPHONE_HPP
 
 # include <iostream>
+# include "Contact.hpp"
 
 class	PhoneBook
 {
-	private:
-
-	public:
-/*-------------Default-Constructor--------*/
-		PhoneBook();
-/*-------------Copy-Constructor-----------*/
-		PhoneBook(const PhoneBook &src);
-/*-------------Default-Destructor---------*/
-		~PhoneBook();
-/*-------------Assignment operator--------*/
-		PhoneBook &operator=(const PhoneBook &src);
+private:
+	Contact	contact[8];
+	int		contactCount = 8;
+public:
+	PhoneBook();
+	~PhoneBook();
 };
 
 #endif
