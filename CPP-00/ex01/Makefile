@@ -1,25 +1,30 @@
+# NAME OF THE EXECUTABLE
 NAME = phonebook
 
-#COMPILATION
+# COMPILER & FLAGS
 CXX = g++
 CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
-#FILES_DIR
-SRC_DIR = srcs/
-OBJ_DIR = obj/
+# DIRECTORIES
+SRC_DIR = srcs
+OBJ_DIR = objs
 
-#FILES
-SRC =	phonebook.cpp \
-		main.cpp
+# SOURCE FILES
+SRC = 	main \
+		Contact \
+		PhoneBook
 
-SRCS		=	$(addprefix $(SRC_DIR), $(SRC))
-OBJS		=	$(patsubst $(SRC_DIR)%.cpp, $(OBJ_DIR)%.o, $(SRCS))
+# FULL PATHS
+SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
+OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
+# DEFAULT TARGET
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CXX) $(CXXFLAGS) -o $(NAME) $(OBJS)
 
+# COMPILATION
 $(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
 	@mkdir -p $(dir $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@

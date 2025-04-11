@@ -1,33 +1,35 @@
 
 #include "../includes/Phonebook.hpp"
 
-int	_add(PhoneBook phonebook, int contactCount) {
-	std::cout << "Adding.." << std::endl;
+int		add(PhoneBook phonebook, int contactCount) {
+	phonebook.newContact(contactCount);
 	return (1);
 }
 
-int _search() {
-	std::cout << "Searching.." << std::endl;
-	return (1);
+void	_search(PhoneBook phoneBook, int contactCount)
+{
+	(void)phoneBook;
+	(void)contactCount;
+	std::cout << HBAR << std::endl;
 }
 
-int main() {
-	PhoneBook	phoneBook = PhoneBook();
+int		main() {
+	PhoneBook	phoneBook;
 	int 		contactCount = 0;
 	std::string	command;
 
-	while (1) {
+	while (true) {
 		std::cout << "Enter command: " << std::endl;
 		std::cin >> command;
+		std::cin.ignore();
 		if (std::cin.eof())
-			break ;
-		if (!command.compare("ADD") || !command.compare("add")) {
-			_add(phoneBook, contactCount);
-			contactCount++; }
-		else if (!command.compare("SEARCH") || !command.compare("search"))
-			_search();
-		else if (!command.compare("EXIT") || !command.compare("exit"))
-			break ;
+			break;
+		if (command == "ADD" || command == "add")
+			add(phoneBook, contactCount++);else
+		if (command == "SEARCH" || command == "search")
+			_search(phoneBook, contactCount);else
+		if (command == "EXIT" || command == "exit")
+			break;
 		else
 			std::cout << "command not found: " << command << std::endl;
 	}
