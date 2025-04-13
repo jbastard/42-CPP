@@ -6,9 +6,8 @@
 # include <string>
 # include <cstring>
 # include <cstdlib>
-
-# include "Contact.hpp"
 #include <iomanip>
+# include "Contact.hpp"
 
 # define HBAR "|----------|----------|----------|----------|"
 # define FIRST_NAME 1
