@@ -5,8 +5,9 @@
 # include <iostream>
 # include <string>
 # include <cstring>
+# include <sstream>
 # include <cstdlib>
-#include <iomanip>
+# include <iomanip>
 # include "Contact.hpp"
 
 # define HBAR "|----------|----------|----------|----------|"
