@@ -7,6 +7,13 @@ std::string itoa(int value) {
 	return oss.str();
 }
 
+int is_digits(std::string str) {
+	for (int i = 0; i < (int)str.length(); i++)
+		if (!isdigit(str[i]))
+			return 0;
+	return 1;
+}
+
 std::string	formatString(std::string str, int caseWidth, std::string center) {
 	std::string ret;
 	int padding = caseWidth - str.length();
@@ -60,6 +67,30 @@ void	displayIndex(int caseWidth) {
 	displayLine(caseWidth);
 }
 
+void	displayContactInfos(Contact contact) {
+	std::cout << formatString("First name", 16, "left")
+	<< ": " << contact.getContactInfos(FIRST_NAME) << std::endl;
+	std::cout << formatString("Last name", 16, "left")
+	<< ": " << contact.getContactInfos(LAST_NAME) << std::endl;
+	std::cout << formatString("Nickname", 16, "left")
+	<< ": " << contact.getContactInfos(NICKNAME) << std::endl;
+	std::cout << formatString("Phone number", 16, "left")
+	<< ": " << contact.getContactInfos(PHONE_NUM) << std::endl;
+	std::cout << formatString("Darkets secret", 16, "left")
+	<< ": " << contact.getContactInfos(D_SECRET) << std::endl << std::endl;
+}
+
+void findContact(PhoneBook phonebook) {
+	std::string research;
+	int index = 0;
+
+	std::cout << "Enter contact ID / Name: ";
+	std::getline(std::cin, research);
+	index = atoi(research.c_str());
+	if (is_digits(research) && (index >= 1 && index <= 9))
+		displayContactInfos(phonebook.getContact(index - 1));
+}
+
 void	search(PhoneBook phoneBook, int contactCount, int caseWidth, std::string center)
 {
 	Contact	contact;
@@ -71,6 +102,7 @@ void	search(PhoneBook phoneBook, int contactCount, int caseWidth, std::string ce
 		displayContactBar(contact, contactCount, caseWidth, center);
 		displayLine(caseWidth);
 	}
+	findContact(phoneBook);
 }
 
 int		add(PhoneBook *phonebook, int contactCount) {
