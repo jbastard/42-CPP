@@ -12,7 +12,9 @@ OBJ_DIR = objs
 # SOURCE FILES
 SRC = 	main \
 		Contact \
-		PhoneBook
+		PhoneBook \
+		display \
+		command
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
