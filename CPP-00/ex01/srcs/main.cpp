@@ -84,11 +84,15 @@ void findContact(PhoneBook phonebook) {
 	std::string research;
 	int index = 0;
 
-	std::cout << "Enter contact ID / Name: ";
+	std::cout << "Enter contact ID: ";
 	std::getline(std::cin, research);
 	index = atoi(research.c_str());
 	if (is_digits(research) && (index >= 1 && index <= 9))
 		displayContactInfos(phonebook.getContact(index - 1));
+	else if (research == "exit")
+		return ;
+	else
+		std::cout << "Invalid ID" << std::endl;
 }
 
 void	search(PhoneBook phoneBook, int contactCount, int caseWidth, std::string center)
