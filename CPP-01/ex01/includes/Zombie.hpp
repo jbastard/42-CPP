@@ -9,6 +9,8 @@
 # define RED "\033[91m"
 # define BLUE "\033[94m"
 
+#define ERR_ARGS "./executable <num of Zombies> <Name of Zombies>"
+
 class Zombie {
 private:
 	std::string	_name;
