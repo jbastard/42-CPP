@@ -104,11 +104,13 @@ bool	Account::makeWithdrawal( int withdrawal ) {
 		<< ";withdrawal:";
 	if (this->_amount < withdrawal)
 		return (std::cout << "refused" << std::endl, false);
+	else
+		std::cout << withdrawal;
 	this->_amount -= withdrawal;
 	_totalAmount -= withdrawal;
 	std::cout
 		<< ";amount:" << _amount
-		<< ";nb_withdrawal:" << this->_nbWithdrawals
+		<< ";nb_withdrawals:" << this->_nbWithdrawals
 		<< std::endl;
 	return (true);
 }
@@ -122,7 +124,7 @@ void	Account::displayStatus( void ) const{
 	std::cout
 		<< " index:" << this->_accountIndex
 		<< ";amount:" << this->checkAmount()
-		<< ";deposit:" << _nbDeposits
+		<< ";deposits:" << _nbDeposits
 		<< ";withdrawals:" << _nbWithdrawals
 		<<  std::endl;
     return;
