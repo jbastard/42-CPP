@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME = Unnecessary violence
+NAME = Unnecessary_violence
 
 # COMPILER & FLAGS
 CXX = c++
