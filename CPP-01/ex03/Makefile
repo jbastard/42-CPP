@@ -11,8 +11,9 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		Zombie \
-		zombieHorde
+		HumanA \
+		HumanB \
+		Weapon
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
