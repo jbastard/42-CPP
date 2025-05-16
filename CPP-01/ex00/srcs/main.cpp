@@ -5,7 +5,7 @@ int main(void)
 {
 	Zombie *toto = newZombie("Toto");
 	toto->announce();
-	toto->Zombie::~Zombie();
 	randomChump("Foo");
+	toto->Zombie::~Zombie();
 	return (0);
 }

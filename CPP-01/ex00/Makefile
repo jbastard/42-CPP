@@ -2,7 +2,7 @@
 NAME = BraiiiiiiinnnzzzZ
 
 # COMPILER & FLAGS
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
 # DIRECTORIES

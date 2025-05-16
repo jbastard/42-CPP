@@ -9,7 +9,7 @@ bool	is_num(std::string str)
 	if (str.empty())
 		return (false);
 	for (int i = 0; str[i]; i++)
-		if (!isdigit(str[i]))
+		if (!std::isdigit(str[i]))
 			return (false);
 	return (true);
 }

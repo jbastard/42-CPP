@@ -1,11 +1,6 @@
 
 #include "../includes/Zombie.hpp"
 
-Zombie::~Zombie() {
-	std::cout
-		<< RED <<this->_name + ": died..." << RESET << std::endl;
-}
-
 Zombie::Zombie() {}
 
 Zombie::Zombie(std::string name) {
@@ -13,6 +8,11 @@ Zombie::Zombie(std::string name) {
 	std::cout
 		<< GREEN << name + ": spawned..." << RESET
 		<< std::endl;
+}
+
+Zombie::~Zombie() {
+	std::cout
+			<< RED <<this->_name + ": died..." << RESET << std::endl;
 }
 
 void	Zombie::announce() {

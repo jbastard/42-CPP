@@ -1,8 +1,8 @@
 # NAME OF THE EXECUTABLE
-NAME = HI_THIS_IS_BRAIN
+NAME = Unnecessary violence
 
 # COMPILER & FLAGS
-CXX = g++
+CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
 # DIRECTORIES
@@ -11,9 +11,8 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		HumanA \
-		HumanB \
-		Weapon
+		Zombie \
+		zombieHorde
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
