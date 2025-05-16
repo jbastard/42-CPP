@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME = executable
+NAME = BraiiiiiiinnnzzzZ
 
 # COMPILER & FLAGS
 CXX = g++

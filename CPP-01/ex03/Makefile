@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME = Moar_brainz!
+NAME = HI_THIS_IS_BRAIN
 
 # COMPILER & FLAGS
 CXX = g++
@@ -11,8 +11,9 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		Zombie \
-		zombieHorde
+		HumanA \
+		HumanB \
+		Weapon
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
