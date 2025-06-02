@@ -3,43 +3,58 @@
 #include <fstream>
 #include <sstream>
 
-#define ERR_ARGS "Error : try with ./Sed_is_for_losers <infile> <outfile>\n"
+#define ERR_ARGS "Error : try with ./sed_is_for_losers <infile> <string 1> <string 2>.\n"
+#define ERR_FILE "Error : input file don't exist or don't have read permissions.\n"
 
-std::string	file_read(char *filename)
+std::string	read_file(const char *filename)
 {
-	std::ifstream		infile(filename);
-	std::stringstream	buffer;
-	buffer << infile.rdbuf();
+	std::string		temp = "";
+	std::string		buffer;
+	std::ifstream	infile(filename);
+
+	if (infile.is_open())
+		while (std::getline(infile, temp))
+		{
+			buffer += temp;
+			if (infile.peek() != EOF)
+				buffer += '\n';
+		}
+	else
+		std::cout << ERR_FILE;
 	infile.close();
-	return (buffer.str());
+	return (buffer);
 }
 
-void		file_write(char *filename, std::string to_write)
+void	write_in_file(const char * filename, std::string content)
 {
-	(void)filename;
-	(void)to_write;
+	std::ofstream outfile(filename);
+	outfile << content;
+	outfile.close();
 }
 
-std::string replace_in_file(std::string s1, std::string s2)
+void	replace_content(const char *filename, std::string s1, std::string s2)
 {
-	std::string		replaced_content;
-	unsigned long	find_start = 0;
+	std::string outfile = (std::string)filename + (std::string)".replace";
+	int i = 0;
 
-	while (find_start < s2.length())
+	(void)s2;
+	std::string buffer = read_file(filename);
+	while (buffer[i])
 	{
-		std::cout << find_start;
-		find_start = s2.find(s1, find_start) + 1;
+		int temp = buffer.find(s1);
+		std::cout << buffer.find(s1);
+		buffer.erase(temp, s1.length());
+		buffer.insert(temp, s2);
+		i += temp;
 	}
-	return (replaced_content);
+	write_in_file(outfile.c_str(), buffer);
 }
 
 int main(int ac, char **av)
 {
-	if (ac != 3)
+	if (ac != 4)
 		return (std::cout << ERR_ARGS, 0);
 
-	std::string infile_content		= file_read(av[1]);
-	std::string outfile_content		= file_read(av[2]);
-	std::string replaced_content	= replace_in_file(infile_content, outfile_content);
-//	file_write(av[2], replaced_content);
+	replace_content(av[1], std::string(av[2]), std::string(av[3]));
+	return 0;
 }

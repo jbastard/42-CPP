@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME = Sed_is_for_losers
+NAME = sed_is_for_losers
 
 # COMPILER & FLAGS
 CXX = c++
