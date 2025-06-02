@@ -35,17 +35,14 @@ void	write_in_file(const char * filename, std::string content)
 void	replace_content(const char *filename, std::string s1, std::string s2)
 {
 	std::string outfile = (std::string)filename + (std::string)".replace";
-	int i = 0;
 
-	(void)s2;
 	std::string buffer = read_file(filename);
-	while (buffer[i])
+	int temp = 0;
+	while ((temp = buffer.find(s1)) != int(std::string::npos))
 	{
-		int temp = buffer.find(s1);
 		std::cout << buffer.find(s1);
 		buffer.erase(temp, s1.length());
 		buffer.insert(temp, s2);
-		i += temp;
 	}
 	write_in_file(outfile.c_str(), buffer);
 }
