@@ -20,9 +20,12 @@ void	Harl::complain(std::string level) {
 			&Harl::error
 	};
 
-	for (int i = 0; i < 4; i++)
+	int i;
+	for (i = 0; i < 4; i++)
 	{
 		if (level == level_index[i])
 			(this->*function_tab[i])();
 	}
+	if (i == 4)
+		std::cout << UNEXPECTED_ARGS;
 }
