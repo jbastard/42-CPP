@@ -1,0 +1,119 @@
+#include "../includes/ClapTrap.hpp"
+
+ClapTrap::ClapTrap() {
+	std::cout
+			<< BRIGHT_GREEN "Default constructor called" RESET
+			<< std::endl;
+}
+
+ClapTrap::ClapTrap(std::string name) : _name(name), _hit_points(10), _energy_points(10), _attack_damage(0) {
+	std::cout
+			<< BRIGHT_GREEN "Name constructor called" RESET
+			<< std::endl;
+}
+
+ClapTrap::ClapTrap(const ClapTrap &src) {
+	std::cout
+			<< BRIGHT_MAGENTA "Copy constructor called" RESET
+			<< std::endl;
+	*this = src;
+}
+
+ClapTrap::~ClapTrap() {
+	std::cout
+			<< BRIGHT_RED "Destructor called" RESET
+			<< std::endl;
+}
+
+ClapTrap &ClapTrap::operator=(const ClapTrap &src) {
+	std::cout
+			<< BRIGHT_CYAN "Copy assignment operator called" RESET
+			<< std::endl;
+
+	if (this != &src)
+	{
+		this->_name = src.getName();
+		this->_hit_points = src.getHitPoints();
+		this->_energy_points = src.getEnergyPoints();
+		this->_attack_damage = src.getAttackDamages();
+	}
+	return *this;
+}
+
+std::ostream& operator<<(std::ostream& out, const ClapTrap& src) {
+	out
+			<< "Name           : " << BRIGHT_WHITE << src.getName() << RESET << std::endl
+			<< "Health         : " << BRIGHT_WHITE << src.getHitPoints() << RESET << std::endl
+			<< "Attack damages : " << BRIGHT_WHITE << src.getAttackDamages() << RESET << std::endl
+			<< "Energy points  : " << BRIGHT_WHITE << src.getEnergyPoints() << RESET << std::endl;
+	return out;
+}
+
+std::string	ClapTrap::getName() const {
+	return this->_name;
+}
+
+int 		ClapTrap::getHitPoints() const {
+	return this->_hit_points;
+}
+
+int			ClapTrap::getEnergyPoints() const {
+	return this->_energy_points;
+}
+
+int			ClapTrap::getAttackDamages() const {
+	return this->_attack_damage;
+}
+
+void ClapTrap::attack(const std::string& target) {
+	if (this->_energy_points <= 0 || this->_hit_points <= 0)
+	{
+		if (this->_hit_points <= 0)
+			std::cout
+					<< this->_name << " is dead !"
+					<< std::endl;
+		else if (this->_energy_points <= 0)
+			std::cout
+					<< this->_name << " don't have enough energy points !"
+					<< std::endl;
+		return;
+	}
+	std::cout
+		<< BRIGHT_YELLOW "ClapTrap " << this->_name << " attacks " << target << ", causing "<< this->_attack_damage << " points of damage !" RESET
+		<< std::endl;
+	_energy_points -= 1;
+}
+
+void ClapTrap::takeDamage(unsigned int amount) {
+	if (this->_hit_points <= 0)
+	{
+		std::cout
+				<< this->_name << " already is dead !"
+				<< std::endl;
+		return;
+	}
+	this->_hit_points -= amount;
+	std::cout
+		<< BRIGHT_RED << this->_name << " took " << amount << " damages" RESET
+		<< std::endl;
+}
+
+void ClapTrap::beRepaired(unsigned int amount) {
+	if (this->_energy_points <= 0 || this->_hit_points <= 0)
+	{
+		if (this->_hit_points <= 0)
+			std::cout
+					<< this->_name << " is dead !"
+					<< std::endl;
+		else if (this->_energy_points <= 0)
+			std::cout
+					<< this->_name << " don't have enough energy points !"
+					<< std::endl;
+		return;
+	}
+	std::cout
+		<< BRIGHT_GREEN << this->_name << " recover " << amount << " health." RESET
+		<< std::endl;
+	this->_energy_points -= 1;
+	this->_hit_points += amount;
+}
