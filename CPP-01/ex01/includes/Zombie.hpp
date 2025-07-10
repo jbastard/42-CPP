@@ -9,7 +9,7 @@
 # define RED "\033[91m"
 # define BLUE "\033[94m"
 
-#define ERR_ARGS "./executable <num of Zombies> <Name of Zombies>"
+#define ERR_ARGS "./executable <Num of Zombies> <Name of Zombies>"
 
 class Zombie {
 private:
@@ -22,7 +22,6 @@ public:
 
 	void		announce(void);
 	void		setName(const std::string &name);
-	std::string	getName() const;
 };
 
 #endif

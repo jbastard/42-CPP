@@ -3,8 +3,8 @@
 #include <fstream>
 #include <sstream>
 
-#define ERR_ARGS "Error : try with ./sed_is_for_losers <infile> <string 1> <string 2>.\n"
-#define ERR_FILE "Error : input file don't exist or don't have read permissions.\n"
+#define ERR_ARGS "Error: try with ./sed_is_for_losers <infile> <string 1> <string 2>.\n"
+#define ERR_FILE "Error: input file don't exist or don't have read permissions.\n"
 
 std::string	read_file(const char *filename)
 {
@@ -40,7 +40,6 @@ void	replace_content(const char *filename, std::string s1, std::string s2)
 	int temp = 0;
 	while ((temp = buffer.find(s1)) != int(std::string::npos))
 	{
-		std::cout << buffer.find(s1);
 		buffer.erase(temp, s1.length());
 		buffer.insert(temp, s2);
 	}

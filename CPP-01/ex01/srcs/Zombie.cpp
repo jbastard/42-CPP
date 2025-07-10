@@ -12,10 +12,6 @@ void Zombie::setName(const std::string &name) {
 	this->_name = name;
 }
 
-std::string	Zombie::getName() const {
-	return (this->_name);
-}
-
 Zombie::Zombie(std::string name) {
 	this->_name = name;
 	std::cout
@@ -25,6 +21,6 @@ Zombie::Zombie(std::string name) {
 
 void	Zombie::announce() {
 	std::cout
-		<< BLUE << this->getName() << ": BraiiiiiiinnnzzzZ..." << RESET
+		<< BLUE << this->_name << ": BraiiiiiiinnnzzzZ..." << RESET
 		<< std::endl;
 }

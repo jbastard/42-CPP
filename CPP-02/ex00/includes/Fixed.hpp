@@ -29,7 +29,7 @@ public:
 	~Fixed();
 
 	int		getRawBits(void) const;
-	void	setRawBits(int const raw_bits);
+	void	setRawBits(const int raw_bits);
 };
 
 #endif

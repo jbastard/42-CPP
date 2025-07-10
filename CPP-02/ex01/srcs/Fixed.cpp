@@ -45,6 +45,7 @@ std::ostream& operator<<(std::ostream& out, const Fixed& src) {
 	out << src.toFloat();
 	return out;
 }
+
 Fixed::~Fixed() {
 	std::cout
 			<< BRIGHT_RED "Destructor called" RESET

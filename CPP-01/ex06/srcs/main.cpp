@@ -23,6 +23,9 @@ int main(int ac, char **av)
 	Harl harl;
 	int level = get_level((std::string)av[1]);
 	switch (level) {
+		default:
+			std::cout << UNEXPECTED_ARGS;
+			break;
 		case 1:
 			harl.complain("DEBUG");
 		case 2:
@@ -31,7 +34,5 @@ int main(int ac, char **av)
 			harl.complain("WARNING");
 		case 4:
 			harl.complain("ERROR");
-		default:
-			std::cout << UNEXPECTED_ARGS;
 	}
 }

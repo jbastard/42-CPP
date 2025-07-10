@@ -6,15 +6,15 @@ CXX = c++
 CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
 # DIRECTORIES
-SRC_DIR = srcs
+SRC_DIR = /
 OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
 
 # FULL PATHS
-SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
-OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
+SRCS = $(addsuffix .cpp, $(SRC))
+OBJS = $(patsubst /%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 # DEFAULT TARGET
 all: $(NAME)

@@ -1,11 +1,10 @@
 
 #include "../includes/Fixed.hpp"
 
-Fixed::Fixed() {
+Fixed::Fixed() : _value(0) {
 	std::cout
 			<< BRIGHT_GREEN "Default constructor called" RESET
 			<< std::endl;
-	this->_value = 0;
 }
 
 Fixed::Fixed(const Fixed &src) {
@@ -15,7 +14,7 @@ Fixed::Fixed(const Fixed &src) {
 	*this = src;
 }
 
-Fixed &Fixed::operator=(const Fixed &src) {
+Fixed &Fixed::operator=(const Fixed& src) {
 	std::cout
 			<< BRIGHT_CYAN "Copy assignment operator called" RESET
 			<< std::endl;
