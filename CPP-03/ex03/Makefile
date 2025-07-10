@@ -1,9 +1,9 @@
 # NAME OF THE EXECUTABLE
-NAME = canon
+NAME =  Nowit’sweird!
 
 # COMPILER & FLAGS
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
+CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98 -Wshadow
 
 # DIRECTORIES
 SRC_DIR = srcs
@@ -12,6 +12,8 @@ OBJ_DIR = objs
 # SOURCE FILES
 SRC = 	main \
 		ClapTrap \
+		ScavTrap \
+		FragTrap \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))

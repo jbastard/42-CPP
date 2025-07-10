@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME = canon
+NAME = Serena,mylove!
 
 # COMPILER & FLAGS
 CXX = c++
@@ -12,6 +12,7 @@ OBJ_DIR = objs
 # SOURCE FILES
 SRC = 	main \
 		ClapTrap \
+		ScavTrap \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))

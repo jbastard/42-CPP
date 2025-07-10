@@ -14,7 +14,7 @@
 #define BRIGHT_WHITE   "\033[1;97m"
 
 class ClapTrap {
-private:
+protected:
 	std::string	_name;
 	int			_hit_points;
 	int			_energy_points;
@@ -23,7 +23,7 @@ private:
 public:
 	ClapTrap();
 	ClapTrap(const std::string& name);
-	ClapTrap(const ClapTrap& copy);
+	explicit ClapTrap(const ClapTrap& copy);
 	~ClapTrap();
 
 	ClapTrap& operator=(const ClapTrap& src);
