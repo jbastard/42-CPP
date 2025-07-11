@@ -9,11 +9,18 @@ private:
 
 public:
 	DiamondTrap();
-	DiamondTrap(std::string name);
-	DiamondTrap(const ClapTrap& copy);
+	DiamondTrap(const std::string& name);
+	DiamondTrap(const DiamondTrap& copy);
 	~DiamondTrap();
 
 	DiamondTrap& operator=(const DiamondTrap& src);
+
+	std::string	getName() const;
+
 	void whoAmI() const;
-	void attack(const std::string& target);
+	virtual void	attack(const std::string& target) { ScavTrap::attack(target); }
+	virtual void	takeDamage(unsigned int amount) { ScavTrap::takeDamage(amount); }
+	virtual void	beRepaired(unsigned int amount) { ScavTrap::beRepaired(amount); }
 };
+
+std::ostream& operator<<(std::ostream& out, const DiamondTrap& src);

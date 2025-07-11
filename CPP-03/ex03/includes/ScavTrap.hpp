@@ -3,8 +3,10 @@
 
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap {
+class ScavTrap : virtual public ClapTrap {
 public:
+	static const unsigned int baseEnergyPoints = 50;
+
 	ScavTrap();
 	ScavTrap(const std::string& name);
 	ScavTrap(const ClapTrap& copy);
@@ -16,6 +18,7 @@ public:
 	void attack(const std::string& target);
 	void takeDamage(unsigned int amount);
 	void beRepaired(unsigned int amount);
+
 };
 
 std::ostream& operator<<(std::ostream& out, const ScavTrap& src);

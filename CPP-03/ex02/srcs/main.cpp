@@ -3,8 +3,8 @@
 int main(void)
 {
 	FragTrap toto("Toto");
-	toto.attack("a training BOT");
 	std::cout << toto;
+	toto.attack("a training BOT");
 	toto.beRepaired(5);
 	std::cout << toto;
 	toto.takeDamage(14);

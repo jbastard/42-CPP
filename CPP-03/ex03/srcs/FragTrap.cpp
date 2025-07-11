@@ -100,16 +100,3 @@ void FragTrap::beRepaired(unsigned int amount) {
 void FragTrap::highFivesGuys() {
 	std::cout << "High five, buddy!" << std::endl;
 }
-
-std::ostream& operator<<(std::ostream& out, const FragTrap& src) {
-	out
-			<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
-			<< BRIGHT_BLUE << "|         FragTrap Stats        |" << RESET << std::endl
-			<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Name           : " << BRIGHT_WHITE << src.getName() << std::setw(24  - src.getName().length()) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Health         : " << BRIGHT_WHITE << src.getHitPoints() << std::setw(24  - getNumLen(src.getHitPoints())) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Attack Damage  : " << BRIGHT_WHITE << src.getAttackDamages() << std::setw(24  - getNumLen(src.getAttackDamages())) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Energy Points  : " << BRIGHT_WHITE << src.getEnergyPoints() << std::setw(24  - getNumLen(src.getEnergyPoints())) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl;
-	return out;
-}

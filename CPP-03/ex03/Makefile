@@ -14,6 +14,7 @@ SRC = 	main \
 		ClapTrap \
 		ScavTrap \
 		FragTrap \
+		DiamondTrap \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))

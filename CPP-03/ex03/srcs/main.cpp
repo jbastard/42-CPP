@@ -1,10 +1,10 @@
-#include "../includes/FragTrap.hpp"
+#include "../includes/DiamondTrap.hpp"
 
 int main(void)
 {
-	FragTrap toto("Toto");
-	toto.attack("a training BOT");
+	DiamondTrap toto("Toto");
 	std::cout << toto;
+	toto.whoAmI();
 	toto.beRepaired(5);
 	std::cout << toto;
 	toto.takeDamage(14);

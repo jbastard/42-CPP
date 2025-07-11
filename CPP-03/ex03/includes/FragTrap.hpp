@@ -1,8 +1,11 @@
 #pragma once
 #include "ClapTrap.hpp"
 
-class FragTrap : public ClapTrap {
+class FragTrap : virtual public ClapTrap {
 public:
+	static const unsigned int baseHitPoints = 100;
+	static const unsigned int baseAttackDamage = 30;
+
 	FragTrap();
 	FragTrap(const std::string& name);
 	FragTrap(const FragTrap& copy);
