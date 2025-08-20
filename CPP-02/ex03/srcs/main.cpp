@@ -26,7 +26,7 @@ int main(void)
 
 	Point point(1, 1);
 	if (bsp(a, b, c, point))
-		std::cout << "WOUAHHHHH" << std::endl;
+		std::cout << BRIGHT_GREEN "WOUAHHHHH" RESET << std::endl;
 	else
-		std::cout << "NAAAAAHHH" << std::endl;
+		std::cout << BRIGHT_RED "NAAAAAHHH" RESET << std::endl;
 }

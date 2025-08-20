@@ -18,7 +18,7 @@ public:
 	Fixed(const Fixed& copy);
 
 	Fixed(const int value);
-	Fixed(const float);
+	Fixed(const float value);
 
 	Fixed&	operator=(const Fixed& src);
 

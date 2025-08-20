@@ -9,7 +9,7 @@ class Fixed {
 private:
 
 	int					_value;
-	static const int	_fractionnal_bits;
+	static const int	_fractionnal_bits = 8;
 
 public:
 
@@ -17,7 +17,7 @@ public:
 	Fixed(const Fixed& copy);
 	Fixed& operator=(const Fixed& src);
 	~Fixed();
-
+	
 	int		getRawBits(void) const;
 	void	setRawBits(const int raw_bits);
 };

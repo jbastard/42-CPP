@@ -40,18 +40,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CPP-02/ex00/includes/Colors.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-02/ex01/includes/Colors.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-02/ex02/includes/Colors.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-02/ex03/includes/Colors.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-00/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-00/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-02/ex00/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex00/includes/Fixed.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-02/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex00/srcs/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CPP-02/ex01/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex01/includes/Fixed.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-02/ex01/nowWeTalk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-02/ex02/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex02/includes/Fixed.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-02/ex03/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex03/includes/Fixed.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +103,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/devenv/CLionProjects/42-CPP/CPP-02/ex03/includes",
+    "last_opened_file_path": "/home/devenv/CLionProjects/42-CPP",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -127,12 +120,7 @@
       <recent name="$PROJECT_DIR$/CPP-02/ex01/includes" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.CPP-02_ex02">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="CMake Application.CPP-02_ex03">
     <configuration name="CPP-00_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-00_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-00_ex01">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -231,6 +219,7 @@
       <workItem from="1755665772246" duration="534000" />
       <workItem from="1755666309888" duration="38000" />
       <workItem from="1755666358190" duration="3046000" />
+      <workItem from="1755674051637" duration="1181000" />
     </task>
     <servers />
   </component>
