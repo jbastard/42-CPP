@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="cpp_pool" targetName="CPP-03_ex03" />
+      <config projectName="cpp_pool" targetName="CPP-00_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-01_ex00" />
+      <config projectName="cpp_pool" targetName="CPP-02_ex02" />
+      <config projectName="cpp_pool" targetName="CPP-02_ex03" />
+      <config projectName="cpp_pool" targetName="CPP-01_ex06" />
+      <config projectName="cpp_pool" targetName="CPP-02_ex00" />
+      <config projectName="cpp_pool" targetName="CPP-01_ex05" />
+      <config projectName="cpp_pool" targetName="CPP-02_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-01_ex03" />
+      <config projectName="cpp_pool" targetName="CPP-01_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-03_ex00" />
+      <config projectName="cpp_pool" targetName="CPP-03_ex02" />
+      <config projectName="cpp_pool" targetName="CPP-03_ex01" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/CPP-02/ex00/includes/Colors.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-02/ex01/includes/Colors.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-02/ex02/includes/Colors.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-02/ex03/includes/Colors.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-00/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-00/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-02/ex00/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex00/includes/Fixed.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-02/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex00/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-02/ex01/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex01/includes/Fixed.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-02/ex01/nowWeTalk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-02/ex02/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex02/includes/Fixed.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-02/ex03/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex03/includes/Fixed.hpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CMakeLists.txt" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/CPP-02/ex00/srcs/Fixed.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/CPP-02/ex00/srcs/main.cpp" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2025" />
+    <option name="minorVersion" value="2" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="31HFwMKqm10gljYSwiMeNrrJ8uX" />
+  <component name="ProjectStatusUIService">{
+  &quot;uiKindId&quot;: &quot;Widget&quot;
+}</component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "CMake Application.CPP-02_ex00.executor": "Run",
+    "CMake Application.CPP-02_ex01.executor": "Run",
+    "CMake Application.CPP-02_ex02.executor": "Run",
+    "Makefile Target.all.executor": "Run",
+    "RunOnceActivity.RadMigrateCodeStyle": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.readMode.enableVisualFormatting": "true",
+    "RunOnceActivity.west.config.association.type.startup.service": "true",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/devenv/CLionProjects/42-CPP/CPP-02/ex03/includes",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "fileTemplates",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CPP-02/ex03/includes" />
+      <recent name="$PROJECT_DIR$/CPP-02/ex02/includes" />
+      <recent name="$PROJECT_DIR$/CPP-02/ex01/includes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.CPP-02_ex02">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-00_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-00_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-00_ex01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-01_ex00" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-01_ex00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-01_ex00">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-01_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-01_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-01_ex01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-01_ex03" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-01_ex03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-01_ex03">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-01_ex05" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-01_ex05" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-01_ex05">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-01_ex06" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-01_ex06" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-01_ex06">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-02_ex00" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-02_ex00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-02_ex00">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-02_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-02_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-02_ex01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-02_ex02" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-02_ex02" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-02_ex02">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-02_ex03" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-02_ex03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-02_ex03">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-03_ex00" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-03_ex00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-03_ex00">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-03_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-03_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-03_ex01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-03_ex02" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-03_ex02" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-03_ex02">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CPP-03_ex03" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-03_ex03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-03_ex03">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.CPP-00_ex01" />
+      <item itemvalue="CMake Application.CPP-01_ex00" />
+      <item itemvalue="CMake Application.CPP-01_ex01" />
+      <item itemvalue="CMake Application.CPP-01_ex03" />
+      <item itemvalue="CMake Application.CPP-01_ex05" />
+      <item itemvalue="CMake Application.CPP-01_ex06" />
+      <item itemvalue="CMake Application.CPP-02_ex00" />
+      <item itemvalue="CMake Application.CPP-02_ex01" />
+      <item itemvalue="CMake Application.CPP-02_ex02" />
+      <item itemvalue="CMake Application.CPP-02_ex03" />
+      <item itemvalue="CMake Application.CPP-03_ex00" />
+      <item itemvalue="CMake Application.CPP-03_ex01" />
+      <item itemvalue="CMake Application.CPP-03_ex02" />
+      <item itemvalue="CMake Application.CPP-03_ex03" />
+    </list>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="" />
+      <created>1755173329556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755173329556</updated>
+      <workItem from="1755173331416" duration="222000" />
+      <workItem from="1755665772246" duration="534000" />
+      <workItem from="1755666309888" duration="38000" />
+      <workItem from="1755666358190" duration="3046000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>
