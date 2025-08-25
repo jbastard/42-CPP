@@ -9,7 +9,6 @@ public:
 
 	ScavTrap();
 	ScavTrap(const std::string& name);
-	ScavTrap(const ClapTrap& copy);
 	~ScavTrap();
 
 	ScavTrap& operator=(const ScavTrap& src);

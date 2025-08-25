@@ -16,13 +16,6 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name) {
 	this->_attack_damage = 30;
 }
 
-FragTrap::FragTrap(const FragTrap &src) {
-	std::cout
-			<< BRIGHT_MAGENTA "Copy constructor called" RESET
-			<< std::endl;
-	*this = src;
-}
-
 FragTrap &FragTrap::operator=(const FragTrap &src) {
 	std::cout
 			<< BRIGHT_CYAN "Copy assignment operator called" RESET

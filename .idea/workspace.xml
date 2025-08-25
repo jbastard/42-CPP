@@ -40,11 +40,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/42-CPP.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/42-CPP.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-02/ex00/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex00/includes/Fixed.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-02/ex01/includes/Fixed.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-02/ex01/includes/Fixed.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-03/ex03/includes/DiamondTrap.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-03/ex03/includes/DiamondTrap.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-03/ex03/includes/FragTrap.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-03/ex03/includes/FragTrap.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-03/ex03/includes/ScavTrap.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-03/ex03/includes/ScavTrap.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-03/ex03/srcs/DiamondTrap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-03/ex03/srcs/DiamondTrap.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-03/ex03/srcs/FragTrap.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-03/ex03/srcs/FragTrap.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,33 +89,73 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "CMake Application.CPP-02_ex00.executor": "Run",
-    "CMake Application.CPP-02_ex01.executor": "Run",
-    "CMake Application.CPP-02_ex02.executor": "Run",
-    "Makefile Target.all.executor": "Run",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/devenv/CLionProjects/42-CPP",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "fileTemplates",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;CMake Application.CPP-00_ex01.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.CPP-02_ex00.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.CPP-02_ex01.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.CPP-02_ex02.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.CPP-03_ex03.executor&quot;: &quot;Run&quot;,
+    &quot;Makefile Target.all.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/devenv/CLionProjects/42-CPP&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;fileTemplates&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Backup and Sync History" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17161459" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Python Packages" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Vcpkg" />
+      <window_info anchor="bottom" id="clangd" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32994187" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.32994187" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="bottom" id="CMake" order="5" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32994187" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.32994187" />
+      <window_info anchor="right" id="make" side_tool="true" />
+      <window_info anchor="right" id="Python Console" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+      <window_info anchor="right" id="Meson" order="5" />
+    </layout>
+  </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CPP-02/ex03/includes" />
@@ -120,7 +163,7 @@
       <recent name="$PROJECT_DIR$/CPP-02/ex01/includes" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.CPP-02_ex03">
+  <component name="RunManager" selected="CMake Application.CPP-03_ex03">
     <configuration name="CPP-00_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-00_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-00_ex01">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -191,6 +234,11 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.CPP-00_ex01" />
       <item itemvalue="CMake Application.CPP-01_ex00" />
@@ -220,6 +268,14 @@
       <workItem from="1755666309888" duration="38000" />
       <workItem from="1755666358190" duration="3046000" />
       <workItem from="1755674051637" duration="1181000" />
+      <workItem from="1756026708930" duration="2316000" />
+      <workItem from="1756029174591" duration="996000" />
+      <workItem from="1756030207283" duration="252000" />
+      <workItem from="1756030470484" duration="229000" />
+      <workItem from="1756030730584" duration="354000" />
+      <workItem from="1756032293225" duration="2347000" />
+      <workItem from="1756116271542" duration="108000" />
+      <workItem from="1756116389664" duration="578000" />
     </task>
     <servers />
   </component>
@@ -230,5 +286,9 @@
     <isAutomaticCheckingOnLaunch value="false" />
     <isAutomaticFoundErrors value="true" />
     <isAutomaticReloadCMake value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

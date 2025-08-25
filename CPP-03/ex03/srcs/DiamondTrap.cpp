@@ -17,13 +17,6 @@ DiamondTrap::DiamondTrap(const std::string& name) : ClapTrap(name), FragTrap(nam
 	this->_attack_damage = FragTrap::baseAttackDamage;
 }
 
-DiamondTrap::DiamondTrap(const DiamondTrap &src) : ClapTrap(src), FragTrap(src), ScavTrap(_name) {
-	std::cout
-			<< BRIGHT_MAGENTA "Copy constructor called" RESET
-			<< std::endl;
-	*this = src;
-}
-
 DiamondTrap &DiamondTrap::operator=(const DiamondTrap &src) {
 	std::cout
 			<< BRIGHT_CYAN "Copy assignment operator called" RESET
@@ -42,6 +35,59 @@ DiamondTrap::~DiamondTrap() {
 	std::cout
 			<< BRIGHT_RED  "DiamondTrap " << "Destructor called" RESET
 			<< std::endl;
+}
+
+void DiamondTrap::attack(const std::string& target) {
+    if (this->_energy_points <= 0 || this->_hit_points <= 0)
+    {
+        if (this->_hit_points <= 0)
+            std::cout
+                    << "DiamondTrap " << this->_name << " is dead !"
+                    << std::endl;
+        else if (this->_energy_points <= 0)
+            std::cout
+                    << "DiamondTrap " << this->_name << " don't have enough energy points !"
+                    << std::endl;
+        return;
+    }
+    std::cout
+            << BRIGHT_YELLOW "DiamondTrap " << this->_name << " attacks " << target << ", causing " << this->_attack_damage << " points of damage !" RESET
+            << std::endl;
+    _energy_points -= 1;
+}
+
+void DiamondTrap::takeDamage(unsigned int amount) {
+    if (this->_hit_points <= 0)
+    {
+        std::cout
+                << "DiamondTrap " << this->_name << " already is dead !"
+                << std::endl;
+        return;
+    }
+    this->_hit_points -= amount;
+    std::cout
+            << BRIGHT_RED << "DiamondTrap " << this->_name << " took " << amount << " damages" RESET
+            << std::endl;
+}
+
+void DiamondTrap::beRepaired(unsigned int amount) {
+    if (this->_energy_points <= 0 || this->_hit_points <= 0)
+    {
+        if (this->_hit_points <= 0)
+            std::cout
+                    <<  "DiamondTrap " << this->_name << " is dead !"
+                    << std::endl;
+        else if (this->_energy_points <= 0)
+            std::cout
+                    <<  "DiamondTrap " <<  this->_name << " don't have enough energy points !"
+                    << std::endl;
+        return;
+    }
+    std::cout
+            << BRIGHT_GREEN "DiamondTrap " << this->_name << " recover " << amount << " health." RESET
+            << std::endl;
+    this->_energy_points -= 1;
+    this->_hit_points += amount;
 }
 
 std::string	DiamondTrap::getName() const {
