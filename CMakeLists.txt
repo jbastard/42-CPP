@@ -10,7 +10,7 @@ function(add_exercise EX_DIR)
     set(SRC_DIR "${EX_DIR}/srcs")
 
     # Récupère aussi les headers
-    file(GLOB_RECURSE SRCS "${SRC_DIR}/*.cpp")
+    file(GLOB_RECURSE SRCS "${EX_DIR}/*.cpp")
     file(GLOB_RECURSE HDRS "${INC_DIR}/*.hpp")
 
     if (SRCS OR HDRS)
