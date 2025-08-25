@@ -1,17 +1,9 @@
 #pragma once
 #include <iostream>
 #include <iomanip>
+#include "Colors.hpp"
 
 #define RESET "\033[0m"
-
-#define BRIGHT_BLACK   "\033[1;90m"
-#define BRIGHT_RED     "\033[1;91m"
-#define BRIGHT_GREEN   "\033[1;92m"
-#define BRIGHT_YELLOW  "\033[1;93m"
-#define BRIGHT_BLUE    "\033[1;94m"
-#define BRIGHT_MAGENTA "\033[1;95m"
-#define BRIGHT_CYAN    "\033[1;96m"
-#define BRIGHT_WHITE   "\033[1;97m"
 
 class ClapTrap {
 protected:
@@ -26,18 +18,16 @@ public:
 	explicit ClapTrap(const ClapTrap& copy);
 	~ClapTrap();
 
-	ClapTrap& operator=(const ClapTrap& src);
+	ClapTrap&       operator=(const ClapTrap& src);
 
-	std::string	getName() const;
-	int 		getHitPoints() const;
-	int			getEnergyPoints() const;
-	int			getAttackDamages() const;
+    virtual         std::string	getName() const;
+	int 	        getHitPoints() const;
+	int		        getEnergyPoints() const;
+	int		        getAttackDamages() const;
 
-    virtual void		attack(const std::string& target);
-
-    virtual void		takeDamage(unsigned int amount);
-
-    virtual void		beRepaired(unsigned int amount);
+    virtual void	attack(const std::string& target);
+    virtual void	takeDamage(unsigned int amount);
+    virtual void	beRepaired(unsigned int amount);
 };
 
 int				getNumLen(int num);

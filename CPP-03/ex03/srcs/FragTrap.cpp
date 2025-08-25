@@ -2,13 +2,13 @@
 
 FragTrap::FragTrap() {
 	std::cout
-			<< BRIGHT_GREEN "Default constructor called" RESET
+			<< BRIGHT_GREEN "FragTrap default constructor called" RESET
 			<< std::endl;
 }
 
 FragTrap::FragTrap(const std::string& name) : ClapTrap(name) {
 	std::cout
-			<< BRIGHT_GREEN  "FragTrap " << "Name constructor called" RESET
+			<< BRIGHT_GREEN  "FragTrap " << "name constructor called" RESET
 			<< std::endl;
 	this->_name = name;
 	this->_hit_points = 100;
@@ -16,25 +16,24 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name) {
 	this->_attack_damage = 30;
 }
 
-FragTrap &FragTrap::operator=(const FragTrap &src) {
-	std::cout
-			<< BRIGHT_CYAN "Copy assignment operator called" RESET
-			<< std::endl;
-
-	if (this != &src)
-	{
-		this->_name = src.getName();
-		this->_hit_points = src.getHitPoints();
-		this->_energy_points = src.getEnergyPoints();
-		this->_attack_damage = src.getAttackDamages();
-	}
-	return *this;
-}
-
 FragTrap::~FragTrap() {
 	std::cout
 			<< BRIGHT_RED  "FragTrap " << "Destructor called" RESET
 			<< std::endl;
+}
+
+FragTrap& FragTrap::operator=(const FragTrap& src) {
+    if (this != &src) {
+        ClapTrap::operator=(src);
+        this->_name = src.getName();
+    }
+    return *this;
+}
+
+void FragTrap::highFivesGuys() {
+    std::cout
+        << BRIGHT_MAGENTA << "High five, buddy!" << RESET
+        << std::endl;
 }
 
 void FragTrap::attack(const std::string& target) {
@@ -88,8 +87,4 @@ void FragTrap::beRepaired(unsigned int amount) {
 			<< std::endl;
 	this->_energy_points -= 1;
 	this->_hit_points += amount;
-}
-
-void FragTrap::highFivesGuys() {
-	std::cout << "High five, buddy!" << std::endl;
 }

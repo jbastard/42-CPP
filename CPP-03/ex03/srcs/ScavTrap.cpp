@@ -2,13 +2,13 @@
 
 ScavTrap::ScavTrap() {
 	std::cout
-			<< BRIGHT_GREEN "Default constructor called" RESET
+			<< BRIGHT_GREEN "ScavTrap default constructor called" RESET
 			<< std::endl;
 }
 
 ScavTrap::ScavTrap(const std::string& name) : ClapTrap(name) {
 	std::cout
-			<< BRIGHT_GREEN  "ScavTrap " << "Name constructor called" RESET
+			<< BRIGHT_GREEN  "ScavTrap " << "name constructor called" RESET
 			<< std::endl;
 	this->_name = name;
 	this->_hit_points = 100;
@@ -20,6 +20,20 @@ ScavTrap::~ScavTrap() {
 	std::cout
 			<< BRIGHT_RED  "ScavTrap " << "Destructor called" RESET
 			<< std::endl;
+}
+
+ScavTrap& ScavTrap::operator=(const ScavTrap& src) {
+    if (this != &src) {
+        ClapTrap::operator=(src);
+        this->_name = src.getName();
+    }
+    return *this;
+}
+
+void ScavTrap::guardGate() {
+    std::cout
+            << BRIGHT_MAGENTA "ScavTrap " << this->_name << " is now guarding." RESET
+            << std::endl;
 }
 
 void ScavTrap::attack(const std::string& target) {
@@ -36,7 +50,7 @@ void ScavTrap::attack(const std::string& target) {
 		return;
 	}
 	std::cout
-			<< BRIGHT_YELLOW "ScavTrap " << this->_name << " attacks " << target << ", causing " << this->_attack_damage << " points of damage !" RESET
+			<< BRIGHT_YELLOW "ScavTrap " << ClapTrap::_name << " attacks " << target << ", causing " << this->_attack_damage << " points of damage !" RESET
 			<< std::endl;
 	_energy_points -= 1;
 }
@@ -73,10 +87,4 @@ void ScavTrap::beRepaired(unsigned int amount) {
 			<< std::endl;
 	this->_energy_points -= 1;
 	this->_hit_points += amount;
-}
-
-void ScavTrap::guardGate() {
-	std::cout
-		<< BRIGHT_MAGENTA "ScavTrap " << this->_name << " is now guarding." RESET
-		<< std::endl;
 }

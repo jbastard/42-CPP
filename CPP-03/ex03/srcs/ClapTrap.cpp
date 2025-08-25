@@ -2,13 +2,13 @@
 
 ClapTrap::ClapTrap() {
 	std::cout
-			<< BRIGHT_GREEN "Default constructor called" RESET
+			<< BRIGHT_GREEN "ClapTrap default constructor called" RESET
 			<< std::endl;
 }
 
 ClapTrap::ClapTrap(const std::string& name) : _name(name), _hit_points(10), _energy_points(10), _attack_damage(0) {
 	std::cout
-			<< BRIGHT_GREEN  "ClapTrap " << "Name constructor called" RESET
+			<< BRIGHT_GREEN  "ClapTrap " << "name constructor called" RESET
 			<< std::endl;
 }
 
@@ -27,7 +27,7 @@ ClapTrap::~ClapTrap() {
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &src) {
 	std::cout
-			<< BRIGHT_CYAN "Copy assignment operator called" RESET
+			<< BRIGHT_CYAN "Assignment operator called" RESET
 			<< std::endl;
 
 	if (this != &src)

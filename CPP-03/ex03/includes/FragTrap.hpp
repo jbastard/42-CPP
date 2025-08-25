@@ -4,10 +4,12 @@
 class FragTrap : virtual public ClapTrap {
 public:
 	static const unsigned int baseHitPoints = 100;
+    static const unsigned int baseEnergyPoints = 100;
 	static const unsigned int baseAttackDamage = 30;
 
 	FragTrap();
-	FragTrap(const std::string& name);
+	explicit FragTrap(const std::string& name);
+    FragTrap(const FragTrap& copy);
 	~FragTrap();
 
 	FragTrap&	operator=(const FragTrap& src);
