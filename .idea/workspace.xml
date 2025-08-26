@@ -23,7 +23,6 @@
       <config projectName="cpp_pool" targetName="CPP-00_ex00" />
       <config projectName="cpp_pool" targetName="CPP-01_ex00" />
       <config projectName="cpp_pool" targetName="CPP-04_ex02" />
-      <config projectName="cpp_pool" targetName="CPP-04_ex03" />
       <config projectName="cpp_pool" targetName="CPP-04_ex00" />
       <config projectName="cpp_pool" targetName="CPP-04_ex01" />
       <config projectName="cpp_pool" targetName="CPP-02_ex02" />
@@ -47,22 +46,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-04, ex00 petites modifs msg consructor/destructor">
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex00/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/includes/Animal.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/includes/Brain.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/includes/Cat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/includes/Colors.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/includes/Dog.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/srcs/Animal.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/srcs/Brain.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/srcs/Cat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/srcs/Dog.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-04/ex01/srcs/main.cpp" afterDir="false" />
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-04, ex01 done">
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/includes/AAnimal.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/includes/Brain.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/includes/Cat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/includes/Colors.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/includes/Dog.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/srcs/AAnimal.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/srcs/Brain.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/srcs/Cat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/srcs/Dog.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-04/ex02/srcs/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-04/ex00/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-04/ex00/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-04/ex01/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-04/ex00/includes/Animal.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-04/ex00/includes/AAnimal.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-04/ex00/includes/Cat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-04/ex00/includes/Cat.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-04/ex00/includes/Dog.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-04/ex00/includes/Dog.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-04/ex00/srcs/Animal.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-04/ex00/srcs/AAnimal.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-04/ex02/main.cpp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-04/ex03/main.cpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,6 +116,7 @@
     "CMake Application.CPP-03_ex03.executor": "Run",
     "CMake Application.CPP-04_ex00.executor": "Run",
     "CMake Application.CPP-04_ex01.executor": "Run",
+    "CMake Application.CPP-04_ex02.executor": "Run",
     "Makefile Target.all.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -126,7 +129,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/jbastard/ClionProjects/42-CPP/CPP-04/ex01",
+    "last_opened_file_path": "/home/jbastard/ClionProjects/42-CPP/CPP-04/ex02",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -150,20 +153,20 @@
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
       <window_info anchor="bottom" id="File Transfer" />
-      <window_info anchor="bottom" id="Find" />
       <window_info anchor="bottom" id="clangd" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.32994187" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.42974806" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.36773255" />
       <window_info anchor="bottom" id="Services" order="4" />
-      <window_info anchor="bottom" id="CMake" order="5" weight="0.21947674" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.42974806" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.42974806" />
+      <window_info anchor="bottom" id="CMake" order="5" weight="0.32994187" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32994187" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.36773255" />
       <window_info anchor="bottom" id="Python Packages" order="8" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="Vcpkg" order="9" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32994187" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.42974806" />
+      <window_info anchor="bottom" id="Find" order="12" weight="0.32994187" />
       <window_info anchor="right" id="Python Console" />
       <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
@@ -177,11 +180,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CPP-04/ex02" />
       <recent name="$PROJECT_DIR$/CPP-04/ex01" />
       <recent name="$PROJECT_DIR$/CPP-04/ex00" />
       <recent name="$PROJECT_DIR$/CPP-04/ex00/includes" />
       <recent name="$PROJECT_DIR$/CPP-04" />
-      <recent name="$PROJECT_DIR$/CPP-03/ex03/includes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CPP-04/ex01/srcs" />
@@ -190,7 +193,7 @@
       <recent name="$PROJECT_DIR$/CPP-04/ex00/includes" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.CPP-04_ex01">
+  <component name="RunManager" selected="CMake Application.CPP-04_ex02">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -301,11 +304,6 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CPP-04_ex03" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-04_ex03" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-04_ex03">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="CMake Application.CPP-00_ex00" />
       <item itemvalue="CMake Application.CPP-00_ex01" />
@@ -328,7 +326,6 @@
       <item itemvalue="CMake Application.CPP-04_ex00" />
       <item itemvalue="CMake Application.CPP-04_ex01" />
       <item itemvalue="CMake Application.CPP-04_ex02" />
-      <item itemvalue="CMake Application.CPP-04_ex03" />
     </list>
   </component>
   <component name="TaskManager">
@@ -351,7 +348,7 @@
       <workItem from="1756032293225" duration="2347000" />
       <workItem from="1756116271542" duration="108000" />
       <workItem from="1756116389664" duration="22352000" />
-      <workItem from="1756203053766" duration="5383000" />
+      <workItem from="1756203053766" duration="11219000" />
     </task>
     <task id="LOCAL-00001" summary="+ | CPP-03_ex03 fix virtual declaration for ClapTrap atributs">
       <option name="closed" value="true" />
@@ -393,7 +390,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756204310346</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="+ | CPP-04, ex01 done">
+      <option name="closed" value="true" />
+      <created>1756208456244</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756208456244</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -409,7 +414,8 @@
     <MESSAGE value="+ | J'ai vérifié l'ex03, attention au conflit avec le push. Penser a bien faire l'ofstream de l'ex03" />
     <MESSAGE value="+ | CPP-04, ex00 terminé" />
     <MESSAGE value="+ | CPP-04, ex00 petites modifs msg consructor/destructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-04, ex00 petites modifs msg consructor/destructor" />
+    <MESSAGE value="+ | CPP-04, ex01 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-04, ex01 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
