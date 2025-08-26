@@ -2,13 +2,16 @@
 
 Dog::Dog() : Animal() {
 	this->_type = "Dog";
+	std::cout << BRIGHT_GREEN "Dog constructor called" RESET << std::endl;
 }
 
 Dog::Dog(const Dog &src) : Animal(src) {
 	*this = src;
 }
 
-Dog::~Dog() {}
+Dog::~Dog() {
+	std::cout << BRIGHT_RED "Dog destructor called" RESET << std::endl;
+}
 
 Dog &Dog::operator=(const Dog &src) {
 	if (this != &src) {

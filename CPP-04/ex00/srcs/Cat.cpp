@@ -2,13 +2,16 @@
 
 Cat::Cat() : Animal() {
 	this->_type = "Cat";
+	std::cout << BRIGHT_GREEN "Cat constructor called" RESET << std::endl;
 }
 
 Cat::Cat(const Cat &src) : Animal(src) {
 	*this = src;
 }
 
-Cat::~Cat() {}
+Cat::~Cat() {
+	std::cout << BRIGHT_RED "Cat destructor called" RESET << std::endl;
+}
 
 Cat &Cat::operator=(const Cat &src) {
 	if (this != &src) {

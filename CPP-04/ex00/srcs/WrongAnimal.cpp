@@ -1,12 +1,16 @@
 #include "../includes/WrongAnimal.hpp"
 
-WrongAnimal::WrongAnimal() {}
+WrongAnimal::WrongAnimal() {
+	std::cout << BRIGHT_GREEN "WrongAnimal constructor called" RESET << std::endl;
+}
 
 WrongAnimal::WrongAnimal(const WrongAnimal &src) {
 	*this = src;
 }
 
-WrongAnimal::~WrongAnimal() {}
+WrongAnimal::~WrongAnimal() {
+	std::cout << BRIGHT_RED "WrongAnimal destructor called" RESET << std::endl;
+}
 
 WrongAnimal &WrongAnimal::operator=(const WrongAnimal &src) {
 	if (this != &src) {

@@ -6,18 +6,20 @@
 
 int main()
 {
-	const Animal* meta = new Animal();
-	const Animal* j = new Dog();
-	std::cout << j->getType() << "      : ";
-	j->makeSound();
 	const Animal* i = new Cat();
 	std::cout << i->getType() << "      : ";
 	i->makeSound();
+	const Animal* j = new Dog();
+	std::cout << j->getType() << "      : ";
+	j->makeSound();
 
-	meta->makeSound();
+	const WrongAnimal* k = new WrongCat();
+	std::cout << k->getType() << " : ";
+	k->makeSound();
 
-	const WrongAnimal* not_the_one = new WrongCat();
-	std::cout << not_the_one->getType() << " : ";
-	not_the_one->makeSound();
+	delete i;
+	delete j;
+	delete k;
+
 	return 0;
 }

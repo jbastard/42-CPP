@@ -2,13 +2,16 @@
 
 WrongCat::WrongCat() : WrongAnimal() {
 	this->_type = "WrongCat";
+	std::cout << BRIGHT_GREEN "WrongCat constructor called" RESET << std::endl;
 }
 
 WrongCat::WrongCat(const WrongCat &src) : WrongAnimal() {
 	*this = src;
 }
 
-WrongCat::~WrongCat() {}
+WrongCat::~WrongCat() {
+	std::cout << BRIGHT_RED "WrongAnimal destructor called" RESET << std::endl;
+}
 
 WrongCat &WrongCat::operator=(const WrongCat &src) {
 	if (this != &src) {

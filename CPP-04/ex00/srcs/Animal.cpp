@@ -1,12 +1,16 @@
 #include "../includes/Animal.hpp"
 
-Animal::Animal() {}
+Animal::Animal() {
+	std::cout << BRIGHT_GREEN "Animal constructor called" RESET << std::endl;
+}
 
 Animal::Animal(const Animal &src) {
 	*this = src;
 }
 
-Animal::~Animal() {}
+Animal::~Animal() {
+	std::cout << BRIGHT_RED "Animal destructor called" RESET << std::endl;
+}
 
 Animal &Animal::operator=(const Animal &src) {
 	if (this != &src) {
