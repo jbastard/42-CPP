@@ -1,7 +1,7 @@
-#include "includes/Dog.hpp"
-#include "includes/Cat.hpp"
-#include "includes/WrongCat.hpp"
-#include "includes/Colors.hpp"
+#include "../includes/Dog.hpp"
+#include "../includes/Cat.hpp"
+#include "../includes/WrongCat.hpp"
+#include "../includes/Colors.hpp"
 
 
 int main()
