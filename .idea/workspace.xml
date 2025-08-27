@@ -48,15 +48,14 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-05, ex00 done">
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Bureaucrat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Colors.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Form.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Bureaucrat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Form.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/main.cpp" afterDir="false" />
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-05, ex01 done">
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/AForm.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/Bureaucrat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/Colors.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/AForm.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/Bureaucrat.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-05/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-05/ex01/srcs/Form.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Form.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +122,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/jbastard/ClionProjects/42-CPP/CPP-05/ex01/includes",
+    "last_opened_file_path": "/home/jbastard/ClionProjects/42-CPP/CPP-05/ex02/includes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -142,7 +141,7 @@
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19036458" />
-      <window_info id="Commit" order="1" weight="0.32994792" />
+      <window_info id="Commit" order="1" weight="0.19036458" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -151,11 +150,11 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.32994187" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.40649223" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.25920543" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.32994187" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.40649223" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.40649223" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.17199612" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.5673449" />
       <window_info anchor="bottom" id="Python Packages" order="8" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="Vcpkg" order="9" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32994187" />
@@ -174,11 +173,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CPP-05/ex02/includes" />
+      <recent name="$PROJECT_DIR$/CPP-05/ex02/srcs" />
       <recent name="$PROJECT_DIR$/CPP-05/ex01/includes" />
       <recent name="$PROJECT_DIR$/CPP-05/ex01/srcs" />
       <recent name="$PROJECT_DIR$/CPP-05/ex00/includes" />
-      <recent name="$PROJECT_DIR$/CPP-05/ex02" />
-      <recent name="$PROJECT_DIR$/CPP-05/ex01" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/CPP-05/ex01/srcs" />
@@ -358,7 +357,7 @@
       <workItem from="1756203053766" duration="19764000" />
       <workItem from="1756253185345" duration="1899000" />
       <workItem from="1756255748844" duration="275000" />
-      <workItem from="1756256033337" duration="3587000" />
+      <workItem from="1756256033337" duration="6020000" />
     </task>
     <task id="LOCAL-00001" summary="+ | CPP-03_ex03 fix virtual declaration for ClapTrap atributs">
       <option name="closed" value="true" />
@@ -424,7 +423,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756222452887</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="+ | CPP-05, ex01 done">
+      <option name="closed" value="true" />
+      <created>1756259767996</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1756259767996</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +450,8 @@
     <MESSAGE value="+ | CPP-04, ex01 done" />
     <MESSAGE value="+ | CPP-04, ex02 done" />
     <MESSAGE value="+ | CPP-05, ex00 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-05, ex00 done" />
+    <MESSAGE value="+ | CPP-05, ex01 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-05, ex01 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

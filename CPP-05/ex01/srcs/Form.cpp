@@ -18,6 +18,10 @@ Form::~Form() {}
 
 Form &Form::operator=(const Form &src) {
 	if (this != &src) {
+		this->_name = src.getName();
+		this->_signed = src.isSigned();
+		this->_sign_grade = src.getSignGrade();
+		this->_exec_grade = src.getExecGrade();
 	}
 	return *this;
 }
@@ -34,17 +38,17 @@ void	Form::beSigned(const Bureaucrat& b) {
 }
 
 const char* Form::GradeTooLowException::what() const throw() {
-	return BRIGHT_RED "Form: grade too low\n" RESET;
+	return BRIGHT_RED "Form: grade too low" RESET;
 }
 
 const char* Form::GradeTooHighException::what() const throw() {
-	return BRIGHT_RED  "Form: grade too high\n" RESET;
+	return BRIGHT_RED  "Form: grade too high" RESET;
 }
 
 std::ostream &operator<<(std::ostream &out, const Form &src) {
 	const std::string is_signed = (src.isSigned()) ? BRIGHT_GREEN"Yes" RESET : BRIGHT_RED"No" RESET;
 	out
-		<< BRIGHT_WHITE" Form       : " << BRIGHT_MAGENTA << src.getName() << RESET
+		<< BRIGHT_WHITE" Form        : " << BRIGHT_BLUE << src.getName() << RESET
 		<< std::endl
 		<< BRIGHT_WHITE " Signed     : " RESET << is_signed
 		<< std::endl
