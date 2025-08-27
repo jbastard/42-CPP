@@ -36,6 +36,7 @@
       <config projectName="cpp_pool" targetName="CPP-01_ex03" />
       <config projectName="cpp_pool" targetName="CPP-01_ex02" />
       <config projectName="cpp_pool" targetName="CPP-01_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-05_ex01" />
       <config projectName="cpp_pool" targetName="CPP-03_ex00" />
       <config projectName="cpp_pool" targetName="CPP-03_ex02" />
       <config projectName="cpp_pool" targetName="CPP-03_ex01" />
@@ -47,15 +48,15 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-04, ex02 done">
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex00/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex00/includes/Bureaucrat.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex00/includes/Colors.hpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex00/srcs/Bureaucrat.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex00/srcs/main.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CPP-05/ex02/Makefile" afterDir="false" />
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-05, ex00 done">
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Bureaucrat.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Colors.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Form.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Bureaucrat.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Form.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-05/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/Makefile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,6 +110,7 @@
     "CMake Application.CPP-04_ex01.executor": "Run",
     "CMake Application.CPP-04_ex02.executor": "Run",
     "CMake Application.CPP-05_ex00.executor": "Run",
+    "CMake Application.CPP-05_ex01.executor": "Run",
     "Makefile Target.all.executor": "Run",
     "RunOnceActivity.RadMigrateCodeStyle": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -121,7 +123,7 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "/home/jbastard/ClionProjects/42-CPP/CPP-05/ex00/includes",
+    "last_opened_file_path": "/home/jbastard/ClionProjects/42-CPP/CPP-05/ex01/includes",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -139,8 +141,8 @@
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
       <window_info id="Learn" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20234375" />
-      <window_info id="Commit" order="1" weight="0.20234375" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19036458" />
+      <window_info id="Commit" order="1" weight="0.32994792" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="TypeScript" />
@@ -149,11 +151,11 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.32994187" />
-      <window_info anchor="bottom" id="Terminal" order="3" weight="0.35416666" />
+      <window_info anchor="bottom" id="Terminal" order="3" weight="0.40649223" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.32994187" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.35416666" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.2504845" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.40649223" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.40649223" />
       <window_info anchor="bottom" id="Python Packages" order="8" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="Vcpkg" order="9" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32994187" />
@@ -172,26 +174,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CPP-05/ex01/includes" />
+      <recent name="$PROJECT_DIR$/CPP-05/ex01/srcs" />
       <recent name="$PROJECT_DIR$/CPP-05/ex00/includes" />
       <recent name="$PROJECT_DIR$/CPP-05/ex02" />
       <recent name="$PROJECT_DIR$/CPP-05/ex01" />
-      <recent name="$PROJECT_DIR$/CPP-05/ex00" />
-      <recent name="$PROJECT_DIR$/CPP-04/ex02" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/CPP-05/ex01/srcs" />
+      <recent name="$PROJECT_DIR$/CPP-05/ex01/includes" />
       <recent name="$PROJECT_DIR$/CPP-05/ex00/srcs" />
       <recent name="$PROJECT_DIR$/CPP-05/ex00/includes" />
       <recent name="$PROJECT_DIR$/CPP-04/ex01/srcs" />
-      <recent name="$PROJECT_DIR$/CPP-04/ex00/srcs" />
-      <recent name="$PROJECT_DIR$/CPP-04/ex01/includes" />
     </key>
   </component>
-  <component name="RunManager" selected="CMake Application.CPP-05_ex00">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="CMake Application.CPP-05_ex01">
     <configuration name="CPP-00_ex00" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-00_ex00" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-00_ex00">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -302,6 +299,16 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CPP-05_ex01" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="cpp_pool" TARGET_NAME="CPP-05_ex01" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="cpp_pool" RUN_TARGET_NAME="CPP-05_ex01">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="CMake Application.CPP-00_ex00" />
       <item itemvalue="CMake Application.CPP-00_ex01" />
@@ -325,6 +332,7 @@
       <item itemvalue="CMake Application.CPP-04_ex01" />
       <item itemvalue="CMake Application.CPP-04_ex02" />
       <item itemvalue="CMake Application.CPP-05_ex00" />
+      <item itemvalue="CMake Application.CPP-05_ex01" />
     </list>
   </component>
   <component name="TaskManager">
@@ -347,7 +355,10 @@
       <workItem from="1756032293225" duration="2347000" />
       <workItem from="1756116271542" duration="108000" />
       <workItem from="1756116389664" duration="22352000" />
-      <workItem from="1756203053766" duration="18899000" />
+      <workItem from="1756203053766" duration="19764000" />
+      <workItem from="1756253185345" duration="1899000" />
+      <workItem from="1756255748844" duration="275000" />
+      <workItem from="1756256033337" duration="3587000" />
     </task>
     <task id="LOCAL-00001" summary="+ | CPP-03_ex03 fix virtual declaration for ClapTrap atributs">
       <option name="closed" value="true" />
@@ -405,7 +416,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756214889339</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="+ | CPP-05, ex00 done">
+      <option name="closed" value="true" />
+      <created>1756222452886</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1756222452887</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -423,7 +442,8 @@
     <MESSAGE value="+ | CPP-04, ex00 petites modifs msg consructor/destructor" />
     <MESSAGE value="+ | CPP-04, ex01 done" />
     <MESSAGE value="+ | CPP-04, ex02 done" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-04, ex02 done" />
+    <MESSAGE value="+ | CPP-05, ex00 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-05, ex00 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

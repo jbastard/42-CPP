@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME =  aclass
+NAME =  formup
 
 # COMPILER & FLAGS
 CXX = c++
@@ -11,10 +11,8 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		AAnimal \
-		Cat \
-		Dog \
-		Brain \
+		Form \
+		Bureaucrat \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
