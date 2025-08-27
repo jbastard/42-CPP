@@ -12,7 +12,6 @@ OBJ_DIR = objs
 # SOURCE FILES
 SRC = 	main \
 		ClapTrap \
-		ScavTrap \
 		FragTrap \
 
 # FULL PATHS

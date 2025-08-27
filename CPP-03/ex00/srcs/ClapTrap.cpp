@@ -40,14 +40,6 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &src) {
 	return *this;
 }
 
-int getNumLen(int num)
-{
-	int i = 1;
-	for (; num > 9; i++)
-		num /= 10;
-	return i;
-}
-
 std::string	ClapTrap::getName() const {
 	return this->_name;
 }
@@ -91,7 +83,7 @@ void ClapTrap::takeDamage(unsigned int amount) {
 				<< std::endl;
 		return;
 	}
-	this->_hit_points -= amount;
+	this->_hit_points -= static_cast<int>(amount);
 	std::cout
 			<< BRIGHT_RED << "ClapTrap " << this->_name << " took " << amount << " damages" RESET
 			<< std::endl;
@@ -117,15 +109,41 @@ void ClapTrap::beRepaired(unsigned int amount) {
 	this->_hit_points += amount;
 }
 
+int getNumLen(int num)
+{
+	int i = 1;
+	for (; num > 9; i++)
+		num /= 10;
+	return i;
+}
+
 std::ostream& operator<<(std::ostream& out, const ClapTrap& src) {
-    out
-            << BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
-            << BRIGHT_BLUE << "|         ClapTrap Stats        |" << RESET << std::endl
-            << BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
-            << BRIGHT_BLUE "|" RESET << "  Name           : " << BRIGHT_WHITE << src.getName() << std::setw(24  - src.getName().length()) << BRIGHT_BLUE "|" RESET << std::endl
-            << BRIGHT_BLUE "|" RESET << "  Health         : " << BRIGHT_WHITE << src.getHitPoints() << std::setw(24  - getNumLen(src.getHitPoints())) << BRIGHT_BLUE "|" RESET << std::endl
-            << BRIGHT_BLUE "|" RESET << "  Attack Damage  : " << BRIGHT_WHITE << src.getAttackDamages() << std::setw(24  - getNumLen(src.getAttackDamages())) << BRIGHT_BLUE "|" RESET << std::endl
-            << BRIGHT_BLUE "|" RESET << "  Energy Points  : " << BRIGHT_WHITE << src.getEnergyPoints() << std::setw(24  - getNumLen(src.getEnergyPoints())) << BRIGHT_BLUE "|" RESET << std::endl
-            << BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl;
-    return out;
+	out
+		<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
+		<< BRIGHT_BLUE << "|         ClapTrap Stats        |" << RESET << std::endl
+		<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Name           : " << BRIGHT_WHITE << src.getName()
+		<< std::setw(12 - src.getName().length()) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Health         : " << BRIGHT_WHITE << src.getHitPoints()
+		<< std::setw(12 - getNumLen(src.getHitPoints())) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Attack Damage  : " << BRIGHT_WHITE << src.getAttackDamages()
+		<< std::setw(12 - getNumLen(src.getAttackDamages())) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Energy Points  : " << BRIGHT_WHITE << src.getEnergyPoints()
+		<< std::setw(12 - getNumLen(src.getEnergyPoints())) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl;
+
+	return out;
 }

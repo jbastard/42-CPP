@@ -4,6 +4,7 @@
 int main(void)
 {
 	ScavTrap toto("Toto");
+
 	std::cout << toto;
 	toto.attack("a training BOT");
 	toto.beRepaired(5);

@@ -16,13 +16,6 @@ FragTrap::FragTrap(const std::string& name) : ClapTrap(name) {
 	this->_attack_damage = 30;
 }
 
-FragTrap::FragTrap(const FragTrap &src) {
-	std::cout
-			<< BRIGHT_MAGENTA "Copy constructor called" RESET
-			<< std::endl;
-	*this = src;
-}
-
 FragTrap &FragTrap::operator=(const FragTrap &src) {
 	std::cout
 			<< BRIGHT_CYAN "Copy assignment operator called" RESET
@@ -103,13 +96,31 @@ void FragTrap::highFivesGuys() {
 
 std::ostream& operator<<(std::ostream& out, const FragTrap& src) {
 	out
-			<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
-			<< BRIGHT_BLUE << "|         FragTrap Stats        |" << RESET << std::endl
-			<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Name           : " << BRIGHT_WHITE << src.getName() << std::setw(24  - src.getName().length()) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Health         : " << BRIGHT_WHITE << src.getHitPoints() << std::setw(24  - getNumLen(src.getHitPoints())) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Attack Damage  : " << BRIGHT_WHITE << src.getAttackDamages() << std::setw(24  - getNumLen(src.getAttackDamages())) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE "|" RESET << "  Energy Points  : " << BRIGHT_WHITE << src.getEnergyPoints() << std::setw(24  - getNumLen(src.getEnergyPoints())) << BRIGHT_BLUE "|" RESET << std::endl
-			<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl;
+		<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
+		<< BRIGHT_BLUE << "|         FragTrap Stats        |" << RESET << std::endl
+		<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Name           : " << BRIGHT_WHITE << src.getName()
+		<< std::setw(12 - src.getName().length()) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Health         : " << BRIGHT_WHITE << src.getHitPoints()
+		<< std::setw(12 - getNumLen(src.getHitPoints())) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Attack Damage  : " << BRIGHT_WHITE << src.getAttackDamages()
+		<< std::setw(12 - getNumLen(src.getAttackDamages())) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "|" << RESET
+		<< "  Energy Points  : " << BRIGHT_WHITE << src.getEnergyPoints()
+		<< std::setw(12 - getNumLen(src.getEnergyPoints())) << ""
+		<< BRIGHT_BLUE << "|" << RESET << std::endl
+
+		<< BRIGHT_BLUE << "+-------------------------------+" << RESET << std::endl;
+
 	return out;
 }

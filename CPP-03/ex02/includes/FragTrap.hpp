@@ -5,7 +5,6 @@ class FragTrap : public ClapTrap {
 public:
 	FragTrap();
 	FragTrap(const std::string& name);
-	FragTrap(const FragTrap& copy);
 	~FragTrap();
 
 	FragTrap&	operator=(const FragTrap& src);
@@ -15,3 +14,5 @@ public:
 	void		takeDamage(unsigned int amount);
 	void		beRepaired(unsigned int amount);
 };
+
+std::ostream& operator<<(std::ostream& out, const FragTrap& src);
