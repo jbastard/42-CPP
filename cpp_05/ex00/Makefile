@@ -1,9 +1,9 @@
 # NAME OF THE EXECUTABLE
-NAME =  aclass
+NAME =  bureaucrat
 
 # COMPILER & FLAGS
 CXX = c++
-CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98 -Wshadow
+CXXFLAGS = -Wall -Werror -Wextra -Iincludes -std=c++98
 
 # DIRECTORIES
 SRC_DIR = srcs
@@ -11,10 +11,7 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		AAnimal \
-		Cat \
-		Dog \
-		Brain \
+		Bureaucrat \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
