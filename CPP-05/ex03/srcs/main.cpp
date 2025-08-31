@@ -1,93 +1,56 @@
 #include "../includes/Bureaucrat.hpp"
 #include "../includes/Intern.hpp"
-#include "../includes/Colors.hpp"
+
 #include <cstdlib>
 #include <ctime>
 
-void print(std::string type)
-{
-	if (type == "bureaucrat")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "----------------- INIT BUREAUCRAT --------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "form")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "-------------------- INIT FORM -----------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "action")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "--------------------- ACTIONS ------------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "shrub")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "---------------- SHRUBBERY FORM ----------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "pres")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "--------------- PRESIDENTIAL FORM --------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "robotomy")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "----------------- ROBOTOMY FORM ---------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-		else if (type == "execute")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "---------------- EXECUTING FORMS ---------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-}
+int main() {
+	std::srand(std::time(0));
 
-int main(void)
-{
-	srand(time(NULL));
-	Intern someRandomIntern;
-	AForm* rrf;
-	AForm* ppf;
-	AForm* scf;
+	Intern intern;
+	Bureaucrat boss("Boss", 1);
 
-	rrf = someRandomIntern.makeForm("Robotomy Request", "Bender_Robotomy");
-	ppf = someRandomIntern.makeForm("Presidential Pardon", "Bender_Pres");
-	scf = someRandomIntern.makeForm("Shrubbery Creation", "Bender_Shrub");
+	const std::string formNames[]  = {
+			"shrubbery creation",
+			"robotomy request",
+			"presidential pardon"
+	};
+	const std::string targets[]    = { "home", "Bender", "Arthur Dent" };
 
-	if (rrf &&  ppf && scf)
-	{
-		print("form");
-		std::cout << *rrf;
-		std::cout << *ppf;
-		std::cout << *scf;
-		try
-		{
-			print("bureaucrat");
-			Bureaucrat crat("Jojo le demago", 1);
-			std::cout << crat;
-			print("action");
-			crat.signForm(*rrf);
-			crat.signForm(*ppf);
-			crat.signForm(*scf);
-			crat.executeForm(*rrf);
-			crat.executeForm(*ppf);
-			crat.executeForm(*scf);
+	std::cout << "=== Creation via Intern::makeForm ===\n";
+	for (int i = 0; i < 3; ++i) {
+		AForm* f = 0;
+		try {
+			f = intern.makeForm(formNames[i], targets[i]); // doit aussi afficher "Intern creates <form>"
+		} catch (std::exception &e) {
+			std::cerr << "makeForm threw: " << e.what() << "\n";
 		}
 
-		catch(const std::exception& e)
-		{
-			std::cerr << "Error catched : " << e.what() << std::endl;
+		if (!f) {
+			std::cerr << "Creation failed for \"" << formNames[i] << "\"\n";
+			continue;
 		}
+
+		std::cout << *f << "\n";
+
+		boss.signForm(*f);
+		boss.executeForm(*f);
+
+		delete f;
 	}
-	delete rrf;
-	delete ppf;
-	delete scf;
+
+	std::cout << "\n=== Nom inconnu: doit afficher une erreur explicite ===\n";
+	AForm* unknown = 0;
+	try {
+		unknown = intern.makeForm("top secret clearance", "nobody");
+		// Selon l’implémentation, unknown peut être NULL et/ou une exception peut être levée.
+	} catch (std::exception &e) {
+		std::cerr << "Unknown makeForm threw: " << e.what() << "\n";
+	}
+	if (unknown) {
+		// Si votre implémentation retourne quand même un pointeur, on évite les fuites.
+		delete unknown;
+	}
+
+	return 0;
 }

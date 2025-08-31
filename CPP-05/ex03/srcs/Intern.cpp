@@ -43,9 +43,9 @@ AForm* Intern::createPardon(const std::string& target)
 AForm* Intern::makeForm(const std::string& name, const std::string& target)
 {
     const FormArray forms[] = {
-        {"Shrubbery Creation", createShrubbery},
-        {"Presidential Pardon", createPardon},
-        {"Robotomy Request", createRobotomy},
+        {"shrubbery creation", createShrubbery},
+        {"presidential pardon", createPardon},
+        {"robotomy request", createRobotomy},
     };
 
     for (int i = 0; i < 3; ++i)

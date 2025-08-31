@@ -46,9 +46,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-05 main ex01">
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-05 main ex02 done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP-05/ex02/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-05/ex03/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/Bureaucrat.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-05/ex03/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.1632752" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.26986435" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.3406008" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.22238372" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.17199612" />
@@ -342,7 +343,7 @@
       <workItem from="1756256033337" duration="6020000" />
       <workItem from="1756268301495" duration="1000" />
       <workItem from="1756563216139" duration="4157000" />
-      <workItem from="1756645361121" duration="5042000" />
+      <workItem from="1756645361121" duration="6033000" />
     </task>
     <task id="LOCAL-00001" summary="+ | CPP-03_ex03 fix virtual declaration for ClapTrap atributs">
       <option name="closed" value="true" />
@@ -456,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756648978133</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="+ | CPP-05 main ex02 done">
+      <option name="closed" value="true" />
+      <created>1756652478651</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1756652478651</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -480,7 +489,8 @@
     <MESSAGE value="+ | CPP-05, ex01, ex02, ex03" />
     <MESSAGE value="+ | CPP-06, ex00, ex01 &amp; ex02" />
     <MESSAGE value="+ | CPP-05 main ex01" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-05 main ex01" />
+    <MESSAGE value="+ | CPP-05 main ex02 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-05 main ex02 done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
