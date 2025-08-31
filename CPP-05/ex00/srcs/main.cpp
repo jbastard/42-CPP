@@ -42,8 +42,8 @@ int main(void)
 		std::cout << "After promotion: " << crat1 << std::endl;
 		crat1.incrementGrade(9);
 		std::cout << "After promotion: " << crat1 << std::endl;
-		// crat1.incrementGrade(1);
-		// std::cout << "After promotion: " << crat1 << std::endl;
+//		 crat1.incrementGrade(1);
+//		 std::cout << "After promotion: " << crat1 << std::endl;
 		crat1.decrementGrade(10);
 		std::cout << "After relagation: " << crat1 << std::endl;
 	}

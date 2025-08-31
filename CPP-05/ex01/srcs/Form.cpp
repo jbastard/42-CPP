@@ -1,6 +1,6 @@
 #include "../includes/Form.hpp"
 
-Form::Form() : name("Default Form"), minimumExecGrade(1), minimumSigningGrade(1)
+Form::Form() : name("Default Form"), is_signed(false), minimumExecGrade(1), minimumSigningGrade(1)
 {
 	// std::cout << "Default Form constructor has been called" << std::endl;
 }
@@ -10,7 +10,7 @@ Form::~Form()
 	// std::cout << "Form destructor has been called" << std::endl;
 }
 
-Form::Form(const std::string& name, const int minimumSigningGrade, const int minimumExecGrade) : name(name), minimumExecGrade(minimumExecGrade), minimumSigningGrade(minimumSigningGrade)
+Form::Form(const std::string& name, const int minimumSigningGrade, const int minimumExecGrade) : name(name), is_signed(false), minimumExecGrade(minimumExecGrade), minimumSigningGrade(minimumSigningGrade)
 {
 	// std::cout << "Form parametized constructor has been called" << std::endl;
 	if (minimumSigningGrade < 1 || minimumExecGrade < 1)

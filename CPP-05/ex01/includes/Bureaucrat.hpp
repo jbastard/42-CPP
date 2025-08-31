@@ -12,16 +12,20 @@ class Bureaucrat{
 		const std::string name;
 		int grade;
 		Bureaucrat();
+
 	public:
 		~Bureaucrat();
 		Bureaucrat(const std::string& name, int grade);
 		Bureaucrat(const Bureaucrat& copy);
 		Bureaucrat& operator=(const Bureaucrat& other);
-		const std::string& getName() const;
-		int getGrade() const;
-		void incrementGrade(int amount);
-		void decrementGrade(int amount);
-		void signForm(Form& form);
+
+		const	std::string& getName() const;
+		int		getGrade() const;
+
+		void	incrementGrade(int amount);
+		void	decrementGrade(int amount);
+		void	signForm(Form& form);
+
 		class GradeTooHighException : public std::exception{
 			public:
 				const char* what() const throw();
