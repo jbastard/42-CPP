@@ -6,116 +6,59 @@
 #include <cstdlib>
 #include <ctime>
 
-void print(std::string type)
-{
-	if (type == "bureaucrat")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "----------------- INIT BUREAUCRAT --------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "form")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "-------------------- INIT FORM -----------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "action")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "--------------------- ACTIONS ------------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "shrub")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "---------------- SHRUBBERY FORM ----------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "pres")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "--------------- PRESIDENTIAL FORM --------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-	else if (type == "robotomy")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "----------------- ROBOTOMY FORM ---------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-		else if (type == "execute")
-	{
-		std::cout << YELLOW "------------------------------------------------" << std::endl;
-		std::cout << "---------------- EXECUTING FORMS ---------------" << std::endl;
-		std::cout << "------------------------------------------------" RESET << std::endl;
-	}
-}
+int main() {
+	std::srand(std::time(0));
 
-int main(void)
-{
-	srand(time(NULL));
+	Bureaucrat signer145("Signer145", 145);  // OK pour signer Shrubbery (145)
+	Bureaucrat exec150("Exec150", 150);      // trop faible pour exécuter Shrubbery (137)
+	Bureaucrat exec137("Exec137", 137);      // juste assez pour exécuter Shrubbery (137)
 
-	/*
-	ALL THE FORM REQUIRED BY THE SUBJECTS ARE HERE SIGNED AND EXECUTED WIHTOUT
-	PROBLEMS TO SHOW "NORMAL" OUTPUTS.
-	*/
+	Bureaucrat signer72("Signer72", 72);     // OK pour signer Robotomy (72)
+	Bureaucrat exec70("Exec70", 70);         // trop faible pour exécuter Robotomy (45)
+	Bureaucrat exec45("Exec45", 45);         // juste assez pour exécuter Robotomy (45)
 
-	try
-	{
-		print("bureaucrat");
-		Bureaucrat crat1("Jojo le demago", 1);
-		std::cout << crat1;
-		print("form");
-		ShrubberyCreationForm shrub("Shrub Target");
-		std::cout << shrub;
-		PresidentialPardonForm pres("Pres Target");
-		std::cout << pres;
-		RobotomyRequestForm robotomy("Robotomy Target");
-		std::cout << robotomy;
-		print("execute");
-		print("shrub");
-		crat1.signForm(shrub);
-		crat1.executeForm(shrub);
-		print("pres");
-		crat1.signForm(pres);
-		crat1.executeForm(pres);
-		print("robotomy");
-		crat1.signForm(robotomy);
-		crat1.executeForm(robotomy);
-		crat1.executeForm(robotomy);
-	}
-	catch (std::exception& e)
-	{
-		std::cout << "Error catched : " << e.what() << std::endl;
+	Bureaucrat signer25("Signer25", 25);     // OK pour signer Pardon (25)
+	Bureaucrat exec10("Exec10", 10);         // trop faible pour exécuter Pardon (5)
+	Bureaucrat exec5("Exec5", 5);            // juste assez pour exécuter Pardon (5)
+
+	// --- Forms concrets (ex02) ---
+	ShrubberyCreationForm shrub("home");           // sign 145, exec 137
+	RobotomyRequestForm    robo("Bender");         // sign 72,  exec 45
+	PresidentialPardonForm pardon("Arthur Dent");  // sign 25,  exec 5
+
+	std::cout << shrub << "\n" << robo << "\n" << pardon << "\n";
+
+	// 1) Erreur exécution sans signature (scope ex02)
+	std::cout << "\n=== Exécution sans signature (doit échouer) ===\n";
+	exec137.executeForm(shrub);
+
+	// 2) SHRUBBERY: signer puis exécuter (échec puis succès)
+	std::cout << "\n=== ShrubberyCreationForm ===\n";
+	signer145.signForm(shrub);      // OK (145)
+	exec150.executeForm(shrub);     // échec (150 > 137)
+	exec137.executeForm(shrub);     // succès -> crée "home_shrubbery"
+
+	// 3) ROBOTOMY: signer puis exécuter (échec puis quelques essais réussis/ratés)
+	std::cout << "\n=== RobotomyRequestForm ===\n";
+	signer72.signForm(robo);        // OK (72)
+	exec70.executeForm(robo);       // échec (70 > 45)
+	for (int i = 0; i < 3; ++i)     // montrer la proba 50%
+		exec45.executeForm(robo);   // succès/échec aléatoire
+
+	// 4) PARDON: signer puis exécuter (échec puis succès)
+	std::cout << "\n=== PresidentialPardonForm ===\n";
+	signer25.signForm(pardon);      // OK (25)
+	exec10.executeForm(pardon);     // échec (10 > 5)
+	exec5.executeForm(pardon);      // succès (pardon affiché)
+
+	std::cout << "\n=== Appel direct execute() enveloppé d'un try/catch ===\n";
+	try {
+		RobotomyRequestForm r2("Marvin");
+		signer72.signForm(r2);
+		r2.execute(exec45); // OK (signé, exec45 a le grade requis)
+	} catch (std::exception &e) {
+		std::cerr << "Exception directe: " << e.what() << "\n";
 	}
 
-	/*
-	HERE, SIGN CAN SIGN THE PRESIDENTIAL FORM BUT CANNOT EXECUTE IT, THIS TEST
-	WILL SHOW THAT A FORM MUST BE SIGNED IN ORDER TO BE EXECUTED AND ONCE SIGNED
-	CAN BE EXECUTED BY A BUREAUCRAT WHO HAS THE REQUIRED GRADE.
-	*/
-
-	try
-	{
-		print("bureaucrat");
-		Bureaucrat sign("Sign", 25);
-		Bureaucrat exec("Exec", 5);
-		std::cout << sign;
-		std::cout << exec;
-		print("pres");
-		PresidentialPardonForm pres("Pres Target");
-		std::cout << pres;
-		print("action");
-		exec.executeForm(pres);
-		sign.signForm(pres);
-		sign.executeForm(pres);
-		// exec.signForm(pres);
-		exec.executeForm(pres);
-	}
-	catch(const std::exception& e)
-	{
-		std::cerr << "Error catched : " << e.what() << std::endl;
-	}
-
+	return 0;
 }

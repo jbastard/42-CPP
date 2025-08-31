@@ -33,9 +33,12 @@ AForm& AForm::operator=(const AForm& other)
 	return *this;
 }
 
-std::ostream& operator<<(std::ostream& os, const AForm& form)
+std::ostream& operator<<(std::ostream& os, const AForm& f)
 {
-	os << "AForm name -> " << form.getName() << std::endl << "AForm Minimum Signing Grade -> " << form.getSigningGrade() << std::endl << "AForm Minimum Exec Grade -> " << form.getExecGrade() << std::endl;
+	os << "AForm name -> " << f.getName() << '\n'
+	   << "AForm Minimum Signing Grade -> " << f.getSigningGrade() << '\n'
+	   << "AForm Minimum Exec Grade -> " << f.getExecGrade() << '\n'
+	   << "AForm Signed -> " << (f.getSignedStatus() ? "yes" : "no");
 	return os;
 }
 

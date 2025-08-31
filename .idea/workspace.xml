@@ -46,63 +46,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-06, ex00, ex01 &amp; ex02">
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-05 main ex01">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex00/includes/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex00/includes/Bureaucrat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex00/includes/Colors.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex00/includes/Colors.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex00/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex00/srcs/Bureaucrat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex00/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/includes/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Bureaucrat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/includes/Colors.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Colors.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/includes/Form.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/includes/Form.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Bureaucrat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/srcs/Form.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/Form.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex01/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/includes/AForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/AForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/includes/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/Bureaucrat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/includes/Colors.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/Colors.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/includes/PresidentialPardonForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/PresidentialPardonForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/includes/RobotomyRequestForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/RobotomyRequestForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/includes/ShrubberyCreationForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/includes/ShrubberyCreationForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/srcs/AForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/AForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/Bureaucrat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/srcs/PresidentialPardonForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/PresidentialPardonForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/srcs/RobotomyRequestForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/RobotomyRequestForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/srcs/ShrubberyCreationForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/ShrubberyCreationForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex02/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/AForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/AForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/Bureaucrat.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/Bureaucrat.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/Colors.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/Colors.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/Intern.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/Intern.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/PresidentialPardonForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/PresidentialPardonForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/RobotomyRequestForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/RobotomyRequestForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/includes/ShrubberyCreationForm.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/includes/ShrubberyCreationForm.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/AForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/AForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/Bureaucrat.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/Bureaucrat.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/Intern.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/Intern.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/PresidentialPardonForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/PresidentialPardonForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/RobotomyRequestForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/RobotomyRequestForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/ShrubberyCreationForm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/ShrubberyCreationForm.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_05/ex03/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex03/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex00/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex00/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex00/includes/ScalarConverter.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex00/includes/ScalarConverter.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex00/srcs/ScalarConverter.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex00/srcs/ScalarConverter.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex00/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex00/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex01/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex01/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex01/includes/Serializer.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex01/includes/Serializer.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex01/srcs/Serializer.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex01/srcs/Serializer.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex01/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex01/srcs/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/includes/A.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/includes/A.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/includes/B.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/includes/B.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/includes/Base.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/includes/Base.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/includes/C.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/includes/C.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/srcs/Base.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/srcs/Base.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CPP_06/ex02/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-06/ex02/srcs/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-05/ex02/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-05/ex02/srcs/main.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -196,8 +142,8 @@
       <window_info anchor="bottom" id="clangd" />
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
-      <window_info anchor="bottom" id="Problems View" order="2" weight="0.32994187" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.4752907" />
+      <window_info anchor="bottom" id="Problems View" order="2" weight="0.1632752" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.26986435" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.22238372" />
       <window_info anchor="bottom" id="Messages" order="6" weight="0.17199612" />
@@ -396,7 +342,7 @@
       <workItem from="1756256033337" duration="6020000" />
       <workItem from="1756268301495" duration="1000" />
       <workItem from="1756563216139" duration="4157000" />
-      <workItem from="1756645361121" duration="2825000" />
+      <workItem from="1756645361121" duration="5042000" />
     </task>
     <task id="LOCAL-00001" summary="+ | CPP-03_ex03 fix virtual declaration for ClapTrap atributs">
       <option name="closed" value="true" />
@@ -502,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756568869954</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="+ | CPP-05 main ex01">
+      <option name="closed" value="true" />
+      <created>1756648978133</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1756648978133</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +479,8 @@
     <MESSAGE value="+ | CPP-05, ex00" />
     <MESSAGE value="+ | CPP-05, ex01, ex02, ex03" />
     <MESSAGE value="+ | CPP-06, ex00, ex01 &amp; ex02" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-06, ex00, ex01 &amp; ex02" />
+    <MESSAGE value="+ | CPP-05 main ex01" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-05 main ex01" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
