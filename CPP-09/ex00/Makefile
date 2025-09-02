@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME =  bitcoin
+NAME =  btc
 
 # COMPILER & FLAGS
 CXX = c++
