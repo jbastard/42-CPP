@@ -1,12 +1,10 @@
 #pragma once
 
-#include <string>
-#include <iostream>
-#include <iomanip>
-#include <stdexcept>
 #include <algorithm>
+#include <iterator>
+#include <iostream>
 
-	class OccurenceNotFoundException : public std::exception{
+	class OccurrenceNotFoundException : public std::exception{
 		public:
 			const char* what() const throw();
 	};

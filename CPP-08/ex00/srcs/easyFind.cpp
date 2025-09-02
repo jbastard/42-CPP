@@ -1,7 +1,6 @@
 #include "../includes/easyFind.hpp"
 
-const char* OccurenceNotFoundException::what() const throw()
+const char* OccurrenceNotFoundException::what() const throw()
 {
-	return "This occurence was not to be found in the container";
+	return "Occurrence not found in container";
 }
-
