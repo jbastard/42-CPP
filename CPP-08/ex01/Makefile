@@ -11,6 +11,7 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
+		Span \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))

@@ -11,7 +11,7 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		ScalarConverter \
+		MutantStack \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))

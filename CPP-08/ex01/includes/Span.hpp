@@ -10,11 +10,13 @@ class Span{
 		unsigned int _N;
 		std::vector<int> _intStock;
 		Span();
+
 	public:
 		Span(unsigned int N);
 		~Span();
 		Span& operator=(const Span& other);
 		Span(const Span& copy);
+
 		class SpanOverflowException : public std::exception
 		{
 			public:
@@ -25,8 +27,9 @@ class Span{
 			public:
 				const char* what() const throw();
 		};
-		void addNumber(int value);
-		void addNumbers(std::vector<int>::const_iterator begin, std::vector<int>::const_iterator end);
-		int	shortestSpan() const;
-		int longestSpan() const;
+
+		void	addNumber(int value);
+		void	addNumbers(std::vector<int>::const_iterator begin, std::vector<int>::const_iterator end);
+		int		shortestSpan() const;
+		int		longestSpan() const;
 };
