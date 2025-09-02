@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME =  span
+NAME =  bitcoin
 
 # COMPILER & FLAGS
 CXX = c++
@@ -11,7 +11,7 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		Span \
+		BitcoinExchange
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))

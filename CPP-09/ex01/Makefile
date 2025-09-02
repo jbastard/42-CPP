@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME =  span
+NAME =  RPN
 
 # COMPILER & FLAGS
 CXX = c++
@@ -11,7 +11,7 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		Span \
+		RPN
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
