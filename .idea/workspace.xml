@@ -17,25 +17,35 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="cpp_pool" targetName="CPP-03_ex03" />
-      <config projectName="cpp_pool" targetName="CPP-00_ex02" />
-      <config projectName="cpp_pool" targetName="CPP-00_ex01" />
-      <config projectName="cpp_pool" targetName="CPP-00_ex00" />
       <config projectName="cpp_pool" targetName="CPP-01_ex00" />
       <config projectName="cpp_pool" targetName="CPP-04_ex02" />
       <config projectName="cpp_pool" targetName="CPP-04_ex00" />
       <config projectName="cpp_pool" targetName="CPP-04_ex01" />
       <config projectName="cpp_pool" targetName="CPP-02_ex02" />
+      <config projectName="cpp_pool" targetName="CPP-07_ex00" />
       <config projectName="cpp_pool" targetName="CPP-02_ex03" />
+      <config projectName="cpp_pool" targetName="CPP-07_ex02" />
+      <config projectName="cpp_pool" targetName="CPP-07_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-05_ex00" />
       <config projectName="cpp_pool" targetName="CPP-01_ex06" />
       <config projectName="cpp_pool" targetName="CPP-02_ex00" />
       <config projectName="cpp_pool" targetName="CPP-01_ex05" />
       <config projectName="cpp_pool" targetName="CPP-02_ex01" />
       <config projectName="cpp_pool" targetName="CPP-01_ex04" />
       <config projectName="cpp_pool" targetName="CPP-01_ex03" />
+      <config projectName="cpp_pool" targetName="CPP-05_ex03" />
       <config projectName="cpp_pool" targetName="CPP-01_ex02" />
+      <config projectName="cpp_pool" targetName="CPP-05_ex02" />
       <config projectName="cpp_pool" targetName="CPP-01_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-05_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-03_ex03" />
+      <config projectName="cpp_pool" targetName="CPP-00_ex02" />
+      <config projectName="cpp_pool" targetName="CPP-00_ex01" />
+      <config projectName="cpp_pool" targetName="CPP-00_ex00" />
+      <config projectName="cpp_pool" targetName="CPP-06_ex00" />
+      <config projectName="cpp_pool" targetName="CPP-06_ex01" />
       <config projectName="cpp_pool" targetName="CPP-03_ex00" />
+      <config projectName="cpp_pool" targetName="CPP-06_ex02" />
       <config projectName="cpp_pool" targetName="CPP-03_ex02" />
       <config projectName="cpp_pool" targetName="CPP-03_ex01" />
     </generated>
@@ -46,7 +56,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-08 WIP" />
+    <list default="true" id="6a4acb2e-c711-43a1-916f-d02d60223a04" name="Changes" comment="+ | CPP-08 ex01 seams done">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-08/ex02/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-08/ex02/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-08/ex02/includes/MutantStack.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-08/ex02/includes/MutantStack.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CPP-08/ex02/srcs/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/CPP-08/ex02/srcs/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,6 +105,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "CMake Application.CPP-00_ex00.executor": "Run",
     "CMake Application.CPP-00_ex01.executor": "Run",
     "CMake Application.CPP-02_ex00.executor": "Run",
     "CMake Application.CPP-02_ex01.executor": "Run",
@@ -129,8 +145,8 @@
       <window_info id="Backup and Sync History" />
       <window_info id="Commit_Guest" show_stripe_button="false" />
       <window_info id="Pull Requests" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.32994792" />
-      <window_info active="true" id="Commit" order="1" visible="true" weight="0.32994792" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24192709" />
+      <window_info id="Commit" order="1" weight="0.32994792" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info id="Learn" order="3" weight="0.20911458" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -140,11 +156,11 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Problems" order="1" />
       <window_info anchor="bottom" id="Problems View" order="2" weight="0.1632752" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="3" visible="true" weight="0.20591085" />
       <window_info anchor="bottom" id="Services" order="4" />
       <window_info anchor="bottom" id="CMake" order="5" weight="0.22238372" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.17199612" />
-      <window_info anchor="bottom" id="Run" order="7" weight="0.5673449" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32994187" />
+      <window_info anchor="bottom" id="Run" order="7" weight="0.32994187" />
       <window_info anchor="bottom" id="Python Packages" order="8" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="Vcpkg" order="9" show_stripe_button="false" weight="0.32994187" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32994187" />
@@ -399,7 +415,7 @@
       <workItem from="1756268301495" duration="1000" />
       <workItem from="1756563216139" duration="4157000" />
       <workItem from="1756645361121" duration="6130000" />
-      <workItem from="1756794433181" duration="769000" />
+      <workItem from="1756794433181" duration="7428000" />
     </task>
     <task id="LOCAL-00001" summary="+ | CPP-03_ex03 fix virtual declaration for ClapTrap atributs">
       <option name="closed" value="true" />
@@ -537,7 +553,31 @@
       <option name="project" value="LOCAL" />
       <updated>1756795188475</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="+ | CPP-08 rename">
+      <option name="closed" value="true" />
+      <created>1756795245603</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1756795245603</updated>
+    </task>
+    <task id="LOCAL-00019" summary="+ | CPP-08 remove commented section">
+      <option name="closed" value="true" />
+      <created>1756795384006</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1756795384006</updated>
+    </task>
+    <task id="LOCAL-00020" summary="+ | CPP-08 ex01 seams done">
+      <option name="closed" value="true" />
+      <created>1756800366493</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1756800366493</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -564,7 +604,10 @@
     <MESSAGE value="+ | CPP-05 main ex02 done" />
     <MESSAGE value="+ | CPP-05 main ex03 done" />
     <MESSAGE value="+ | CPP-08 WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-08 WIP" />
+    <MESSAGE value="+ | CPP-08 rename" />
+    <MESSAGE value="+ | CPP-08 remove commented section" />
+    <MESSAGE value="+ | CPP-08 ex01 seams done" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ | CPP-08 ex01 seams done" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

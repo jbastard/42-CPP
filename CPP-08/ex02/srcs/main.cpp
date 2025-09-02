@@ -1,76 +1,67 @@
+#include <iostream>
+#include <list>
+#include <stack>
 #include "../includes/MutantStack.hpp"
 
-int main(void)
-{
+static void print_sep(const char* title) {
+	std::cout << "\n===== " << title << " =====" << std::endl;
+}
 
-	/******************************************************************************
-	* 						MUTANT STACK IMPLEMENTATION							  *
-	*******************************************************************************/
+int main() {
+	print_sep("MutantStack");
 
 	MutantStack<int> mstack;
 
-	mstack.push(1);
-	mstack.push(2);
-	std::cout << "=========== FIRST ELEMENT IN STACK =============" << std::endl;
-	std::cout << mstack.top() << std::endl;
+	mstack.push(5);
+	mstack.push(17);
+	std::cout << "top:  " << mstack.top() << std::endl;
 
 	mstack.pop();
-
-	std::cout << "================== STACK SIZE ==================" << std::endl;
-	std::cout << mstack.size() << std::endl;
+	std::cout << "size: " << mstack.size() << std::endl;
 
 	mstack.push(3);
-	mstack.push(4);
 	mstack.push(5);
-	mstack.push(6);
+	mstack.push(737);
+	mstack.push(0);
 
-	std::cout << "=========== STACK SIZE AFTER PUSHES ============" << std::endl;
-	std::cout << mstack.size() << std::endl;
-
-	MutantStack<int>::iterator it = mstack.begin();
+	MutantStack<int>::iterator it  = mstack.begin();
 	MutantStack<int>::iterator ite = mstack.end();
 
+	std::cout << "(test ++it / --it) ";
 	++it;
 	--it;
-	std::cout << "============ ITERATE THROUGH STACK =============" << std::endl;
 
-	while (it != ite)
-	{
-		std::cout << *it << ", ";
-		++it;
+	std::cout << "contenu (base -> top): ";
+	for (; it != ite; ++it) {
+		std::cout << *it << " ";
 	}
-	std::cout << "END." << std::endl;
-	
-	/******************************************************************************
-	* 				LST IMPLEMENTATION TO COMPARE OUTPUTS						  *
-	*******************************************************************************/
+	std::cout << std::endl;
+
+	// Copie dans un std::stack
+	std::stack<int> s(mstack);
+	std::cout << "copie dans std::stack: top = " << s.top() << std::endl;
+
+	print_sep("std::list");
 
 	std::list<int> lst;
-	lst.push_back(1);
-	lst.push_back(2);
-	std::cout << "=========== FIRST ELEMENT IN LIST =============" << std::endl;
-	std::cout << lst.back() << std::endl;
+	lst.push_back(5);
+	lst.push_back(17);
+	std::cout << "back: " << lst.back() << std::endl;
 
 	lst.pop_back();
-
-	std::cout << "=================== LIST SIZE ==================" << std::endl;
-	std::cout << lst.size() << std::endl;
+	std::cout << "size: " << lst.size() << std::endl;
 
 	lst.push_back(3);
-	lst.push_back(4);
 	lst.push_back(5);
-	lst.push_back(6);
+	lst.push_back(737);
+	lst.push_back(0);
 
-	std::cout << "=========== LIST SIZE AFTER PUSHES ============" << std::endl;
-	std::cout << lst.size() << std::endl;
+	std::cout << "contenu (debut -> fin): ";
+	for (std::list<int>::iterator lit = lst.begin(); lit != lst.end(); ++lit) {
+		std::cout << *lit << " ";
+	}
+	std::cout << std::endl;
 
-	std::cout << "============ ITERATE THROUGH LIST ==============" << std::endl;
-
-	for (std::list<int>::iterator it = lst.begin(); it != lst.end(); ++it)
-		std::cout << *it << ", ";
-
-	std::cout << "END." << std::endl;
-
+	print_sep("END");
 	return 0;
-
 }

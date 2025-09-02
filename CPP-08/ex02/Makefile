@@ -1,5 +1,5 @@
 # NAME OF THE EXECUTABLE
-NAME =  scalarconverter
+NAME =  mutantstack
 
 # COMPILER & FLAGS
 CXX = c++
@@ -11,7 +11,6 @@ OBJ_DIR = objs
 
 # SOURCE FILES
 SRC = 	main \
-		MutantStack \
 
 # FULL PATHS
 SRCS = $(addprefix $(SRC_DIR)/, $(addsuffix .cpp, $(SRC)))
